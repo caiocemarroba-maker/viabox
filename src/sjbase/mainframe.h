@@ -125,6 +125,9 @@ public:
 	bool            ShowRemainingTime   () const { return m_showRemainingTime; }
 	void            OnUrlChanged        (const wxString& n, const wxString& o) { m_player.m_queue.OnUrlChanged(n, o); }
 	void            OnUrlChangingDone   () { UpdateDisplay(); }
+	void            VisSwitcherToggle( bool bVis = true, const char * pcmsg = nullptr);
+	bool            VisSwitcherIsCursorKey(int targetId);
+	void            VisSwitcherStartTimer( bool bReset);
 
 	// open files - this function is called eg. on a double click
 	// on an associated file or when the user drags a file onto the main frame.
@@ -308,6 +311,7 @@ private:
 	bool            m_showRemainingTime;
 	bool            m_blinkBlink;
 	wxTimer         m_elapsedTimeTimer;
+	wxTimer         m_VisSwitcherTimer;
 	SjMainApp*      m_mainApp;
 	bool            m_updateIndexAfterConstruction;
 	bool            m_haltedManually;
@@ -338,6 +342,7 @@ private:
 	void            OnCloseWindow       (wxCloseEvent&);
 	void            OnIconizeWindow     (wxIconizeEvent&);
 	void            OnElapsedTimeTimer  (wxTimerEvent&);
+	void            OnVisSwitcherTimer  (wxTimerEvent& event);
 	void            OnMouseWheel        (wxMouseEvent&);
 
 	DECLARE_EVENT_TABLE ();

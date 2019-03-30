@@ -1077,6 +1077,7 @@ SjMainFrame::SjMainFrame(SjMainApp* mainApp, int id, long skinFlags, const wxPoi
 
 	m_simpleSearchInputTimer.SetOwner(this, IDTIMER_SEARCHINPUT);
 	m_elapsedTimeTimer.SetOwner(this, IDTIMER_ELAPSEDTIME);
+	m_VisSwitcherTimer.SetOwner(this, IDTIMER_VISSWITCHER);
 
 	// init search info text
 	{	SjSkinValue v;
@@ -1505,6 +1506,7 @@ BEGIN_EVENT_TABLE(SjMainFrame, SjSkinWindow)
 	                 IDO_SEARCHMUSICSEL999,     SjMainFrame::OnSearchMusicSel       )
 	EVT_TIMER       (IDTIMER_SEARCHINPUT,       SjMainFrame::OnSimpleSearchInputTimer)
 	EVT_TIMER       (IDTIMER_ELAPSEDTIME,       SjMainFrame::OnElapsedTimeTimer     )
+	EVT_TIMER       (IDTIMER_VISSWITCHER,       SjMainFrame::OnVisSwitcherTimer     )
 	EVT_CLOSE       (                           SjMainFrame::OnCloseWindow          )
 	EVT_ICONIZE     (                           SjMainFrame::OnIconizeWindow        )
 	//EVT_IDLE      (                           SjMainFrame::OnIdle                 )
@@ -1556,13 +1558,63 @@ void SjMainFrame::CmdLineAndDdeSeeExecute(const wxString& cmds__)
 }
 #endif
 
+void SjMainFrame::OnVisSwitcherTimer(wxTimerEvent& event)
+{
+    VisSwitcherToggle(true, "Switched by Timer");
+}
 
+void SjMainFrame::VisSwitcherStartTimer( bool bReset) {
+
+    if (bReset) {
+        if (!m_VisSwitcherTimer.IsRunning()) return;
+        m_VisSwitcherTimer.Stop();
+    }
+    m_VisSwitcherTimer.Start(10000, true);
+}
+
+void SjMainFrame::VisSwitcherToggle( bool bVis, const char * pcmsg) {
+
+    ///Test if "Video window" (Vis) is visible
+    const bool bVisVisible =  g_visModule->IsOverWorkspace();
+    ///fprintf(stderr, "WWWWWWWWWWWWWWWWWWW - SjMainFrame::VisSwitcherToggle( bool bVis=%d, const char * pcmsg=%s)  VisVisible=%d\n", int(bVis), pcmsg, int(bVisVisible));
+
+    if (bVis )  {
+        if (bVisVisible) {
+            ///Vis visible (as we want), not toggling
+            return;
+        }
+    } else {
+        ///(Re)Start timer for 10 secs
+        //if (m_VisSwitcherTimer.IsRunning())  m_VisSwitcherTimer.Stop();
+        //m_VisSwitcherTimer.Start(10000, true);
+        VisSwitcherStartTimer(false);
+
+
+        if (!bVisVisible) {
+            ///Vis not visible (as we want), not  toggling
+            return;
+        }
+    }
+
+    ///Toggle Vis
+    GetEventHandler()->QueueEvent(new wxCommandEvent(wxEVT_COMMAND_MENU_SELECTED, IDT_VIS_TOGGLE));
+}
+
+bool SjMainFrame::VisSwitcherIsCursorKey( int targetId) {
+
+    return targetId == IDT_WORKSPACE_KEY_LEFT
+         || targetId == IDT_WORKSPACE_KEY_RIGHT
+         || targetId == IDT_WORKSPACE_KEY_UP
+         || targetId == IDT_WORKSPACE_KEY_DOWN ;
+
+}
 void SjMainFrame::OnSkinTargetEvent(int targetId, SjSkinValue& value, long accelFlags)
 {
 	/* hier sollten wirklich alle Fäden zusammenlaufen damit die Tastaturbedienung auch ohne
 	Accel-Table funktioniert, vgl. http://www.silverjuke.net/forum/topic-3197.html */
 
 	GotInputFromUser();
+	if (VisSwitcherIsCursorKey(targetId)) VisSwitcherStartTimer(true);
 
 	if( targetId >= IDT_DISPLAY_LINE_FIRST && targetId <= IDT_DISPLAY_LINE_LAST )
 	{
@@ -1586,6 +1638,10 @@ void SjMainFrame::OnSkinTargetEvent(int targetId, SjSkinValue& value, long accel
 		// this stuff will be forwarded to the browser (or some keys to the vis.)
 		// (we may come from there, but this is not necessarily the case, eg. when using "real" accelerators or buttons for this)
 		if( g_visModule->IsOverWorkspace() && (targetId >= IDT_WORKSPACE_KEY_LEFT && targetId <= IDT_WORKSPACE_KEY_DOWN) ) {
+		if (VisSwitcherIsCursorKey(targetId))
+		{
+            		VisSwitcherToggle(false, "KEY");
+		}
 			g_visModule->OnVisMenu(targetId);
 		}
 		else {
