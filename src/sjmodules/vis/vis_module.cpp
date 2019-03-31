@@ -381,7 +381,6 @@ void SjVisModule::ReceiveMsg(int msg)
 		SjSkinValue buttonState = g_mainFrame->GetSkinTargetValue(IDT_VIS_TOGGLE);
 		buttonState.vmax = 0;
 
-		if (msg == IDMODMSG_VIDEO_DETECTED) g_mainFrame->VisSwitcherToggle(true, "");
 		wxString desiredRenderer = GetDesiredRenderer();
 
 		if( m_visWindowVisible )

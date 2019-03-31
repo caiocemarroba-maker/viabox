@@ -1560,7 +1560,7 @@ void SjMainFrame::CmdLineAndDdeSeeExecute(const wxString& cmds__)
 
 void SjMainFrame::OnVisSwitcherTimer(wxTimerEvent& event)
 {
-    VisSwitcherToggle(true, "Switched by Timer");
+    VisSwitcherToggle(true);
 }
 
 void SjMainFrame::VisSwitcherStartTimer( bool bReset) {
@@ -1572,28 +1572,19 @@ void SjMainFrame::VisSwitcherStartTimer( bool bReset) {
     m_VisSwitcherTimer.Start(10000, true);
 }
 
-void SjMainFrame::VisSwitcherToggle( bool bVis, const char * pcmsg) {
+void SjMainFrame::VisSwitcherToggle(bool bVis) {
 
     ///Test if "Video window" (Vis) is visible
     const bool bVisVisible =  g_visModule->IsOverWorkspace();
-    ///fprintf(stderr, "WWWWWWWWWWWWWWWWWWW - SjMainFrame::VisSwitcherToggle( bool bVis=%d, const char * pcmsg=%s)  VisVisible=%d\n", int(bVis), pcmsg, int(bVisVisible));
 
     if (bVis )  {
-        if (bVisVisible) {
-            ///Vis visible (as we want), not toggling
-            return;
-        }
+        ///Vis visible (as we want), or not a video: not toggling
+        if ( bVisVisible || !m_player.IsVideoOnAir() ) return ;
     } else {
-        ///(Re)Start timer for 10 secs
-        //if (m_VisSwitcherTimer.IsRunning())  m_VisSwitcherTimer.Stop();
-        //m_VisSwitcherTimer.Start(10000, true);
+        ///Vis not visible (as we want):  not  toggling
+        if (!bVisVisible) return;
+        ///Start timer for 10 secs
         VisSwitcherStartTimer(false);
-
-
-        if (!bVisVisible) {
-            ///Vis not visible (as we want), not  toggling
-            return;
-        }
     }
 
     ///Toggle Vis
@@ -1614,7 +1605,8 @@ void SjMainFrame::OnSkinTargetEvent(int targetId, SjSkinValue& value, long accel
 	Accel-Table funktioniert, vgl. http://www.silverjuke.net/forum/topic-3197.html */
 
 	GotInputFromUser();
-	if (VisSwitcherIsCursorKey(targetId)) VisSwitcherStartTimer(true);
+	bool bCursorKey = VisSwitcherIsCursorKey(targetId);
+	if (bCursorKey) VisSwitcherStartTimer(true);
 
 	if( targetId >= IDT_DISPLAY_LINE_FIRST && targetId <= IDT_DISPLAY_LINE_LAST )
 	{
@@ -1638,10 +1630,7 @@ void SjMainFrame::OnSkinTargetEvent(int targetId, SjSkinValue& value, long accel
 		// this stuff will be forwarded to the browser (or some keys to the vis.)
 		// (we may come from there, but this is not necessarily the case, eg. when using "real" accelerators or buttons for this)
 		if( g_visModule->IsOverWorkspace() && (targetId >= IDT_WORKSPACE_KEY_LEFT && targetId <= IDT_WORKSPACE_KEY_DOWN) ) {
-		if (VisSwitcherIsCursorKey(targetId))
-		{
-            		VisSwitcherToggle(false, "KEY");
-		}
+			if (bCursorKey) VisSwitcherToggle(false);
 			g_visModule->OnVisMenu(targetId);
 		}
 		else {
@@ -2371,6 +2360,7 @@ void SjMainFrame::OnFwdToModules(wxCommandEvent& event)
 		}
 	}
 
+    if (modMsg == IDMODMSG_VIDEO_DETECTED) VisSwitcherToggle(true);
 	m_moduleSystem.BroadcastMsg(modMsg);
 }
 

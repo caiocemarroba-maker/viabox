@@ -125,9 +125,9 @@ public:
 	bool            ShowRemainingTime   () const { return m_showRemainingTime; }
 	void            OnUrlChanged        (const wxString& n, const wxString& o) { m_player.m_queue.OnUrlChanged(n, o); }
 	void            OnUrlChangingDone   () { UpdateDisplay(); }
-	void            VisSwitcherToggle( bool bVis = true, const char * pcmsg = nullptr);
+	void            VisSwitcherToggle(bool bVis = true);
 	bool            VisSwitcherIsCursorKey(int targetId);
-	void            VisSwitcherStartTimer( bool bReset);
+	void            VisSwitcherStartTimer(bool bReset);
 
 	// open files - this function is called eg. on a double click
 	// on an associated file or when the user drags a file onto the main frame.
