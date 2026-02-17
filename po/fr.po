@@ -2,9 +2,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Silverjuke\n"
 "Report-Msgid-Bugs-To: r10s@b44t.com\n"
-"POT-Creation-Date: 2016-03-12 14:44+0100\n"
+"POT-Creation-Date: 2019-05-22 19:22-0300\n"
 "PO-Revision-Date: 2010-10-04 14:51+0100\n"
-"Last-Translator: Bjoern Petersen <drsilver@silverjuke.net>\n"
+"Last-Translator: Bjoern Petersen <drsilver@viabox.net>\n"
 "Language-Team: French\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
@@ -138,6 +138,11 @@ msgstr ""
 "\n"
 "Voulez-vous annuler la mise à jour?"
 
+#, fuzzy
+#| msgid "Cleanup index..."
+msgid "Cleanup caches"
+msgstr "Nettoyer l'index..."
+
 # %s will be replaced by the program name, usually "Silverjuke"
 #, c-format
 msgid ""
@@ -205,6 +210,12 @@ msgstr ""
 
 # %i will be replaced by a number-selection-control, %s will be replaced by a music-selection-control
 msgid "Remove played tracks from queue"
+msgstr ""
+
+msgid "Interrupt the playing track and continue with the new selection?"
+msgstr ""
+
+msgid "Interrupt playing track"
 msgstr ""
 
 msgid "More from current album"
@@ -952,6 +963,12 @@ msgstr "Demander avant de vider la playlist"
 
 # This option is shown in the corresponding message box and in "Basic settings/Further options"
 #, fuzzy
+#| msgid "Ask before enqueuing multiple tracks"
+msgid "Ask before interrupting tracks"
+msgstr "Demander avant l'ajout d'un groupe de titres dans la playlist"
+
+# This option is shown in the corresponding message box and in "Basic settings/Further options"
+#, fuzzy
 #| msgid "Ask before changing my rating"
 msgid "Ask before changing the rating"
 msgstr "Demander avant de modifier ma notation"
@@ -1566,8 +1583,13 @@ msgstr "Clavier virtuel"
 msgid "Credit system"
 msgstr "Système de jetons"
 
+#, fuzzy
+#| msgid ""
+#| "Silverjuke provides a so called \"kiosk mode\" which allows you to run "
+#| "the program\n"
+#| "full screen with a defined functionality."
 msgid ""
-"Silverjuke provides a so called \"kiosk mode\" which allows you to run the "
+"Via Box provides a so called \"kiosk mode\" which allows you to run the "
 "program\n"
 "full screen with a defined functionality."
 msgstr ""
@@ -1688,8 +1710,16 @@ msgstr "Transparence:"
 msgid "Hide cursor"
 msgstr ""
 
+#, fuzzy
+#| msgid ""
+#| "Using the Numpad plus some other special keys, you can control Silverjuke "
+#| "completely\n"
+#| "by the keyboard or some other hardware buttons. In this case, you'll "
+#| "enqueue new\n"
+#| "tracks by entering the unique numbers shown beside the album and track "
+#| "names."
 msgid ""
-"Using the Numpad plus some other special keys, you can control Silverjuke "
+"Using the Numpad plus some other special keys, you can control Via Box "
 "completely\n"
 "by the keyboard or some other hardware buttons. In this case, you'll enqueue "
 "new\n"
@@ -1739,6 +1769,11 @@ msgstr "Mémoriser les jetons entre les exécutions du programme"
 
 msgid "Current credit:"
 msgstr "Jetons disponibles:"
+
+#, fuzzy
+#| msgid "Total time"
+msgid "Total:"
+msgstr "Temps total"
 
 msgid "Please enter your password to exit the kiosk mode."
 msgstr "Veuillez entrer votre mot de passe pour terminer le mode kiosque"
@@ -2371,8 +2406,10 @@ msgstr "Piste inconnue"
 msgid "Unknown artist"
 msgstr "Artiste inconnu"
 
-msgid "Add a server containing music-files"
-msgstr "Ajouter un serveur contenant des fichiers musicaux"
+#, fuzzy
+#| msgid "Add a DAAP-/iTunes-server"
+msgid "Add an HTTP server"
+msgstr "Ajouter un DAAP-/iTunes-Server"
 
 msgid "Use server:"
 msgstr "Utiliser le serveur:"
@@ -2701,6 +2738,9 @@ msgstr ""
 msgid "Please select a directory with images"
 msgstr "Veuillez sélectionner un répertoire avec des images"
 
+msgid "Scroll"
+msgstr ""
+
 msgid "Title overlay"
 msgstr ""
 
@@ -2720,6 +2760,9 @@ msgstr "Afficher le specte"
 
 msgid "Show oscilloscope"
 msgstr "Afficher l'oscilloscope"
+
+msgid "Mono"
+msgstr ""
 
 # This is an option in the context menu of the new vis. / karaoke screen; dt. "Sterne anzeigen" oder so
 msgid "Show starfield"
@@ -3014,7 +3057,7 @@ msgstr "0"
 msgid "__COVER_KEYWORDS__"
 msgstr "0"
 
-# Use 0 if you do not want to include a virtual keyboard to your locale, otherwise, define the virtual keyboard as described in the developer network on www.silverjuke.net
+# Use 0 if you do not want to include a virtual keyboard to your locale, otherwise, define the virtual keyboard as described in the developer network on www.viabox.net
 msgid "__VIRT_KEYBD__"
 msgstr "0"
 
@@ -3115,8 +3158,11 @@ msgstr "Le fichier \"%s\" n'existe pas."
 msgid "Cannot execute \"%s\"."
 msgstr "Ne peut exécuter \"%s\"."
 
-msgid "Please use the operating system to set Silverjuke to an exclusive mode."
+msgid "Please use the operating system to set Via Box to an exclusive mode."
 msgstr ""
+
+#~ msgid "Add a server containing music-files"
+#~ msgstr "Ajouter un serveur contenant des fichiers musicaux"
 
 #, fuzzy
 #~| msgid "Only initalize system volume"
@@ -3295,7 +3341,7 @@ msgstr ""
 #~ "Cette option n'est opérationnelle que dans la version enregistrée de "
 #~ "Silverjuke."
 
-# The first %s will be replaced by the program name (usually "Silverjuke"), the second and third %s will be replaced by a file type (eg. "MP3"), the fourth %s will be replaced by the URL to search for modules (eg. "http://www.silverjuke.net/en/modules.html".
+# The first %s will be replaced by the program name (usually "Silverjuke"), the second and third %s will be replaced by a file type (eg. "MP3"), the fourth %s will be replaced by the URL to search for modules (eg. "http://www.viabox.net/en/modules.html".
 #~ msgid ""
 #~ "%s has not found an %s-decoder on your system. If you want to play %s-"
 #~ "files, you should install a module for this purpose.\n"
@@ -3388,8 +3434,8 @@ msgstr ""
 #~ "lib,666\">modules</a>\tcomplémentaires, notamment pour lire d'autres "
 #~ "formats de fichiers\tmusicaux ou bien appliquer une autre visualisation."
 #~ "\tVous trouvez la liste des modules disponibles sous\t<a href="
-#~ "\"web:3\">www.silverjuke.net</a>.</p><h1>Informations complémentaires</"
-#~ "h1><p>\tCette présentation ne donne qu'un aperçu des\tpossibilités de "
+#~ "\"web:3\">www.viabox.net</a>.</p><h1>Informations complémentaires</h1><p>"
+#~ "\tCette présentation ne donne qu'un aperçu des\tpossibilités de "
 #~ "Silverjuke. Des informations\tcomplémentaires ou plus précises sont "
 #~ "fournies par\tthème dans l'<a href=\"web:9\">aide en ligne</a> prévue "
 #~ "dans chaque menu\tcontextuel.</p><p>\tNous vous souhaitons encore "
@@ -3451,9 +3497,6 @@ msgstr ""
 # %s will be replaced by the name of a program
 #~ msgid "Arguments for \"%s\""
 #~ msgstr "Arguments pour \"%s\""
-
-#~ msgid "Total time"
-#~ msgstr "Temps total"
 
 #~ msgid "Cannot calculate the total time"
 #~ msgstr "Le temps total ne peut pas être déterminé"
@@ -3546,7 +3589,7 @@ msgstr ""
 #~ "période,\n"
 #~ "vous devez acheter une licence."
 
-# The first %s will be replaced by the program name, usually "Silverjuke". The second %s will be replaced by the name of the website, eg. www.silverjuke.net
+# The first %s will be replaced by the program name, usually "Silverjuke". The second %s will be replaced by the name of the website, eg. www.viabox.net
 #~ msgid ""
 #~ "Further information about purchasing %s licences\n"
 #~ "are available at %s."
@@ -3554,7 +3597,7 @@ msgstr ""
 #~ "Vous trouvez toutes les informations pour l'achat\n"
 #~ "de licenses %s sous %s."
 
-# %s will be replaced by the name of a website, eg. www.silverjuke.net
+# %s will be replaced by the name of a website, eg. www.viabox.net
 #~ msgid "Open %s..."
 #~ msgstr "Ouvrir %s"
 
@@ -3698,7 +3741,7 @@ msgstr ""
 #~ msgid "Close %s"
 #~ msgstr "Fermer"
 
-# %s will be replaced by the name of a website, eg. www.silverjuke.net
+# %s will be replaced by the name of a website, eg. www.viabox.net
 #, fuzzy
 #~ msgid "Open %s"
 #~ msgstr "Ouvrir %s"
@@ -3731,9 +3774,6 @@ msgstr ""
 
 #~ msgid "DAAP-/iTunes-client"
 #~ msgstr "DAAP-/iTunes-Client"
-
-#~ msgid "Add a DAAP-/iTunes-server"
-#~ msgstr "Ajouter un DAAP-/iTunes-Server"
 
 #~ msgid ""
 #~ "With Silverjuke's HTTP server you can access the program and your music "

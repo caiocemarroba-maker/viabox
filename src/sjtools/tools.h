@@ -443,7 +443,7 @@ public:
 	 ********************************************************************/
 
 	// CrashPrecaution() writes the given information in the file
-	// .crashprecaution.  On silverjuke termination or when calling
+	// .crashprecaution.  On viabox termination or when calling
 	// NotCrashed(), this file is deleted. If the program hangs,
 	// the information is printed on next startup.
 	//
@@ -485,7 +485,7 @@ public:
 	// Explore the Silverjuke homepage.
 	// ExploreHelp() should be called if only the help should be opened,
 	// which may also be available offline (but currently isn't). ExploreHomepage()
-	// should be called when www.silverjuke.net is REALLY needed, eg. for
+	// should be called when www.viabox.net is REALLY needed, eg. for
 	// downloading skins or modules.
 	void            ExploreHomepage     (SjHomepageId, const wxString& param=wxT(""));
 
@@ -556,9 +556,9 @@ public:
 	bool            IsStaticSearchPath  (int index) const { return (index>=0&&index<m_searchPathsFirstUser)? TRUE : FALSE; }
 	bool            IsStaticSearchPath  (const wxString& path) const { return IsStaticSearchPath(GetSearchPathIndex(path)); }
 	void            InitSearchPaths     ();
-	static wxString GetUserAppDataDir   (); // eg. ~/.config/silverjuke or c:/dokumente und einstellungen/benutzer/meinname/, normally writable
-	static wxString GetGlobalAppDataDir (); // eg. /usr/share/silverjuke or c:/programs/silverjuke/ ; normally read-only
-	static wxString GetSilverjukeProgramDir (); // eg. c:/programs/silverjuke/ , may be same as GetUserAppDataDir()
+	static wxString GetUserAppDataDir   (); // eg. ~/.config/viabox or c:/dokumente und einstellungen/benutzer/meinname/, normally writable
+	static wxString GetGlobalAppDataDir (); // eg. /usr/share/viabox or c:/programs/viabox/ ; normally read-only
+	static wxString GetSilverjukeProgramDir (); // eg. c:/programs/viabox/ , may be same as GetUserAppDataDir()
 
 private:
 	wxArrayString   m_searchPaths;

@@ -712,7 +712,7 @@ wxString SjRule::GetAsSql(const wxString& value__, SjField field, SjFieldOp op, 
 
 		//
 		// add quoted to string, preserve an unqoted copy
-		// the second wxSqlt::QParam(value) was added doe to the report on http://www.silverjuke.net/forum/topic-2546.html
+		// the second wxSqlt::QParam(value) was added doe to the report on http://www.viabox.net/forum/topic-2546.html
 		//
 
 		unquotedValue = wxSqlt::QParam(value);
@@ -1056,7 +1056,7 @@ long SjAdvSearch::IncludeExclude(SjLLHash* ids, int action)
 					}
 					else
 					{
-						// prepare for deletion; 19.11.2008: bug fixed, see http://www.silverjuke.net/forum/topic-2936.html
+						// prepare for deletion; 19.11.2008: bug fixed, see http://www.viabox.net/forum/topic-2936.html
 						m_rules[fieldToAddToIndex].AddToInclExcl(m_rules[r].m_value[0]);
 						m_rules[r].m_value[0].Clear();
 					}

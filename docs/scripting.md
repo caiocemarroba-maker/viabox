@@ -735,12 +735,12 @@ immediately.
 
 Example:
 
-    function silverjukeLoaded()
+    function viaboxLoaded()
     {
         // Silverjuke is loaded now, do what to do here.
     }
 
-    program.onLoad = silverjukeLoaded;
+    program.onLoad = viaboxLoaded;
 
 See also: Program.loaded, Program.onUnload, Program.onKiosk
 
@@ -754,12 +754,12 @@ This function is triggered before Silverjuke is terminated.
 
 Example:
 
-    function silverjukeExit()
+    function viaboxExit()
     {
         // Silverjuke is about to quit now - do what to do here.
     }
 
-    program.onUnload = silverjukeExit;
+    program.onUnload = viaboxExit;
 
 To remove the callback function, just assign "undefined" to the property.
 

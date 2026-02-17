@@ -46,7 +46,7 @@ The skin definitions are read from one or more XML-files which specify the
 images to use and the interaction with Silverjuke.
 
 You should put all files together into a single folder which must have the
-extension .sjs (stands for silverjuke skin).
+extension .sjs (stands for viabox skin).
 
 While developing the skin, using a folder is very useful, as you can access
 each file directly. Later, if your skin is ready, you can compress the files

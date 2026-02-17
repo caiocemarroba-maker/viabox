@@ -387,7 +387,7 @@ void SjTestdrive1()
 			wxASSERT( !::wxFileExists(path) );
 		}
 		{
-			wxString path = SjTools::GetSilverjukeProgramDir() + wxT("Silverjuke.exe");     // existant file in existant dir - do not run this test if the program has not the name "silverjuke.exe"
+			wxString path = SjTools::GetSilverjukeProgramDir() + wxT("Silverjuke.exe");     // existant file in existant dir - do not run this test if the program has not the name "viabox.exe"
 			if( ::wxFileExists(path) ) {
 				wxFileName filename(path);
 				wxASSERT( !filename.IsDir() );
@@ -462,7 +462,7 @@ void SjTestdrive1()
 				}
 
 				// does sqlite work well with upper/lower case and with german umlauts?
-				// see http://www.silverjuke.net/forum/topic-1196.html
+				// see http://www.viabox.net/forum/topic-1196.html
 				sql.Query(wxT("INSERT INTO test (col1) VALUES ('Die ") +wxString(wxChar(0xc4))+ wxT("rzte');"));
 				sql.Query(wxT("SELECT * FROM test WHERE col1 LIKE 'die ") +wxString(wxChar(0xe4))+  wxT("%'"));
 				if( !sql.Next() ) {
@@ -540,14 +540,14 @@ void SjTestdrive1()
 		see.Execute(wxT("test1='") + testStr + wxT("'; test2=test1; test2=encodeURI(test2); test2=decodeURI(test2); test1==test2;"));
 		if( !see.GetResultLong() )
 		{
-			wxLogWarning(wxT("Testdrive: encodeURI()/decodeURI() failed, see http://www.silverjuke.net/forum/topic-3234.html"));
+			wxLogWarning(wxT("Testdrive: encodeURI()/decodeURI() failed, see http://www.viabox.net/forum/topic-3234.html"));
 		}
 	}
 	#endif
 
 	// Check if the floating point library is loaded and working well.
 	// Under some circumstances, the library is not loaded when it is nedded; this results in
-	// the error "R6002 - floating point support not loaded", see and http://www.silverjuke.net/forum/topic-3615.html
+	// the error "R6002 - floating point support not loaded", see and http://www.viabox.net/forum/topic-3615.html
 	{
 		double dummyfloat;
 		dummyfloat = 17.5f;

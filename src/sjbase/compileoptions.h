@@ -34,7 +34,7 @@
 #define SJ_VERSION_REVISION 1
 
 #ifndef SJ_PROGRAM_NAME
-#define SJ_PROGRAM_NAME wxT("Silverjuke")
+#define SJ_PROGRAM_NAME wxT("Via Box")
 #endif
 
 #ifndef SJ_USE_C_INTERFACE          // allow C plugins? Makes only sense if scripting is enabled, too.

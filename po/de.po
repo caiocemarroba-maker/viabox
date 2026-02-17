@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Silverjuke\n"
 "Report-Msgid-Bugs-To: r10s@b44t.com\n"
-"POT-Creation-Date: 2016-03-12 14:44+0100\n"
+"POT-Creation-Date: 2019-05-22 19:22-0300\n"
 "PO-Revision-Date: 2016-03-12 14:49+0100\n"
 "Last-Translator: Björn Petersen <r10s@b44t.com>\n"
 "Language-Team: German <debian-l10n-german@lists.debian.org>\n"
@@ -134,6 +134,11 @@ msgstr ""
 "\n"
 "Aktualisierungsvorgang abbrechen?"
 
+#, fuzzy
+#| msgid "Cleanup index..."
+msgid "Cleanup caches"
+msgstr "Index bereinigen..."
+
 # %s will be replaced by the program name, usually "Silverjuke"
 #, c-format
 msgid ""
@@ -202,6 +207,14 @@ msgstr "Wiedergabe beim ersten Einstellen in Warteliste starten"
 # %s will be replaced by the name of a music selection
 msgid "Remove played tracks from queue"
 msgstr "Gespielte Titel aus Warteschlange entfernen"
+
+msgid "Interrupt the playing track and continue with the new selection?"
+msgstr ""
+
+#, fuzzy
+#| msgid "Wait for end of playing track"
+msgid "Interrupt playing track"
+msgstr "Auf Ende des aktuellen Titels warten"
 
 msgid "More from current album"
 msgstr "Mehr vom aktuellen Album"
@@ -895,6 +908,11 @@ msgstr "Beim Einstellen mehrerer Titel in die Warteschlange nachfragen"
 msgid "Ask before clearing the playlist"
 msgstr "Beim Leeren der Wiedergabeliste nachfragen"
 
+#, fuzzy
+#| msgid "Ask before enqueuing multiple tracks"
+msgid "Ask before interrupting tracks"
+msgstr "Beim Einstellen mehrerer Titel in die Warteschlange nachfragen"
+
 msgid "Ask before changing the rating"
 msgstr "Vor dem Ändern der Wertung nachfragen"
 
@@ -1491,8 +1509,13 @@ msgstr "Bildschirmtastatur"
 msgid "Credit system"
 msgstr "Kreditsystem"
 
+#, fuzzy
+#| msgid ""
+#| "Silverjuke provides a so called \"kiosk mode\" which allows you to run "
+#| "the program\n"
+#| "full screen with a defined functionality."
 msgid ""
-"Silverjuke provides a so called \"kiosk mode\" which allows you to run the "
+"Via Box provides a so called \"kiosk mode\" which allows you to run the "
 "program\n"
 "full screen with a defined functionality."
 msgstr ""
@@ -1615,8 +1638,16 @@ msgstr "Transparenz:"
 msgid "Hide cursor"
 msgstr "Mauszeiger ausblenden"
 
+#, fuzzy
+#| msgid ""
+#| "Using the Numpad plus some other special keys, you can control Silverjuke "
+#| "completely\n"
+#| "by the keyboard or some other hardware buttons. In this case, you'll "
+#| "enqueue new\n"
+#| "tracks by entering the unique numbers shown beside the album and track "
+#| "names."
 msgid ""
-"Using the Numpad plus some other special keys, you can control Silverjuke "
+"Using the Numpad plus some other special keys, you can control Via Box "
 "completely\n"
 "by the keyboard or some other hardware buttons. In this case, you'll enqueue "
 "new\n"
@@ -1665,6 +1696,9 @@ msgstr "Kredit zwischen zwei Programmstarts merken"
 
 msgid "Current credit:"
 msgstr "Aktueller Kredit:"
+
+msgid "Total:"
+msgstr ""
 
 msgid "Please enter your password to exit the kiosk mode."
 msgstr "Bitte geben Sie Ihr Passwort ein, um den Kiosk-Modus zu beenden."
@@ -2262,8 +2296,8 @@ msgstr "Unbekannter Titel"
 msgid "Unknown artist"
 msgstr "Unbekannter Künstler"
 
-msgid "Add a server containing music-files"
-msgstr "Server mit Musikdateien hinzufügen"
+msgid "Add an HTTP server"
+msgstr ""
 
 msgid "Use server:"
 msgstr "Server verwenden:"
@@ -2560,6 +2594,9 @@ msgstr "%s-Dateien verwenden"
 msgid "Please select a directory with images"
 msgstr "Bitte wählen Sie einen Ordner mit Bildern aus"
 
+msgid "Scroll"
+msgstr ""
+
 msgid "Title overlay"
 msgstr "Titel einblenden"
 
@@ -2577,6 +2614,9 @@ msgstr "Spektrum anzeigen"
 
 msgid "Show oscilloscope"
 msgstr "Oszilloskop anzeigen"
+
+msgid "Mono"
+msgstr ""
 
 msgid "Show starfield"
 msgstr "Sterne anzeigen"
@@ -2943,10 +2983,16 @@ msgstr "Die Datei \"%s\" existiert nicht."
 msgid "Cannot execute \"%s\"."
 msgstr "Kann \"%s\" nicht ausführen."
 
-msgid "Please use the operating system to set Silverjuke to an exclusive mode."
+#, fuzzy
+#| msgid ""
+#| "Please use the operating system to set Silverjuke to an exclusive mode."
+msgid "Please use the operating system to set Via Box to an exclusive mode."
 msgstr ""
 "Bitte verwenden Sie die Einstellungen des Betriebssystems, um Silverjuke in "
 "einen Exklusiv-Modus zu versetzen."
+
+#~ msgid "Add a server containing music-files"
+#~ msgstr "Server mit Musikdateien hinzufügen"
 
 #~ msgid "Only initialize system volume"
 #~ msgstr "Systemlautstärke nur initialisieren"

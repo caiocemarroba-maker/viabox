@@ -145,7 +145,7 @@ void SjCoverBrowser::Realize(bool reloadColumnMixer, bool keepColIndex)
 
 void SjCoverBrowser::SelectAllRows(SjCol* cover) const
 {
-	// s http://www.silverjuke.net/forum/post.php?p=5379#5379
+	// s http://www.viabox.net/forum/post.php?p=5379#5379
 	bool multiEnqueueAvailable = g_mainFrame->IsOpAvailable(SJ_OP_MULTI_ENQUEUE);
 
 	if( multiEnqueueAvailable )

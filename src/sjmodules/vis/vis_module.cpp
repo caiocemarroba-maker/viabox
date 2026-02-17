@@ -165,7 +165,7 @@ void SjVisModule::StartVis()
 	if( IsVisStarted() )
 		return;
 
-	g_mainFrame->m_autoCtrl.m_stateStartVisTimestamp = SjTools::GetMsTicks(); // we forgot this in 2.10beta3, see http://www.silverjuke.net/forum/viewtopic.php?p=2994#2994
+	g_mainFrame->m_autoCtrl.m_stateStartVisTimestamp = SjTools::GetMsTicks(); // we forgot this in 2.10beta3, see http://www.viabox.net/forum/viewtopic.php?p=2994#2994
 	OpenWindow__();
 	if( m_visFlags&SJ_VIS_FLAGS_SWITCH_OVER_AUTOMATICALLY )
 	{
@@ -185,7 +185,7 @@ void SjVisModule::StopVis()
 {
 	if( m_modal == 0 )
 	{
-		g_mainFrame->m_autoCtrl.m_stateStopVisTimestamp = SjTools::GetMsTicks(); // we forgot this in 2.10beta3, see http://www.silverjuke.net/forum/viewtopic.php?p=2994#2994
+		g_mainFrame->m_autoCtrl.m_stateStopVisTimestamp = SjTools::GetMsTicks(); // we forgot this in 2.10beta3, see http://www.viabox.net/forum/viewtopic.php?p=2994#2994
 
 		SetCurrRenderer(NULL);
 		CloseWindow__();
@@ -592,7 +592,7 @@ void SjVisModule::OnVisMenu(int id)
 					{
 						g_tools->m_config->Write("player/vismodule", newRenderer->PackFileName());
 						if( !m_visWindowVisible ) {
-							g_mainFrame->m_autoCtrl.m_stateStartVisTimestamp = SjTools::GetMsTicks(); // we forgot this in 2.10beta3, see http://www.silverjuke.net/forum/viewtopic.php?p=2994#2994
+							g_mainFrame->m_autoCtrl.m_stateStartVisTimestamp = SjTools::GetMsTicks(); // we forgot this in 2.10beta3, see http://www.viabox.net/forum/viewtopic.php?p=2994#2994
 							OpenWindow__();
 						}
 						SetCurrRenderer(newRenderer); // UpdateVisMenu() implicitly called

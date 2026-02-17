@@ -134,7 +134,7 @@ That's all. As you see, the folder structure and the naming conventions are not
 defined by Silverjuke and completely editable.
 
 For further examples, please have a loot at the repository "Silverjuke SDK
-Examples" at https://github.com/r10s/silverjuke-sdk-examples
+Examples" at https://github.com/r10s/viabox-sdk-examples
 
 ---
 

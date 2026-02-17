@@ -215,7 +215,7 @@ SjNumpadHandlerId SjNumpadPlayHandler::KeyPressed(int idt)
 	else
 	{
 		// we forgot resetting the display message before V2.52 ...
-		// see http://www.silverjuke.net/forum/post.php?p=4829#4829 - "Numpad cancel"
+		// see http://www.viabox.net/forum/post.php?p=4829#4829 - "Numpad cancel"
 		g_mainFrame->SetDisplayMsg(_("Cancel"), m_numpadInput->GetHoldMs(SJ_NUMPAD_HOLD_ERROR));
 		return SJ_NUMPAD_DELETEME;
 	}

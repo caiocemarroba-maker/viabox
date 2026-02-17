@@ -1,5 +1,5 @@
 ==========
-silverjuke
+viabox
 ==========
 
 Play and organize your music
@@ -13,13 +13,13 @@ Play and organize your music
 SYNOPSIS
 ========
 
-**silverjuke** [*options*] [*FILES*]
+**viabox** [*options*] [*FILES*]
 
 
 DESCRIPTION
 ===========
 
-This manual page documents briefly the **silverjuke** command.
+This manual page documents briefly the **viabox** command.
 It can be used to play and organize your music collection.
 
 
@@ -27,7 +27,7 @@ OPTIONS
 =======
 
 This program follows the usual GNU command line syntax, with long options
-starting with two dashes ('**-**'). **silverjuke** supports the following options:
+starting with two dashes ('**-**'). **viabox** supports the following options:
 
 --ini=FILE
   set the configuration file to use to FILE

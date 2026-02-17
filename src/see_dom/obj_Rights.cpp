@@ -180,7 +180,7 @@ IMPLEMENT_PUT(rights)
 		DO_PUT_DEFAULTS;
 	}
 
-	// change a flag, added in 2.52beta2, see also http://www.silverjuke.net/forum/topic-2204.html
+	// change a flag, added in 2.52beta2, see also http://www.viabox.net/forum/topic-2204.html
 	if( opToChange != 0 && !g_mainFrame->IsAllAvailable() )
 	{
 		SjTools::SetFlag(g_mainFrame->m_availOp, opToChange, VAL_BOOL);

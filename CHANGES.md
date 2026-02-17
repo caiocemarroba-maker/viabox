@@ -106,6 +106,6 @@ V15.4.x (26.06.2015)
 ================================================================================
 
 - New Silverjuke version based upon the open source core,
-  see https://github.com/silverjuke/silverjuke
+  see https://github.com/viabox/viabox
 
 

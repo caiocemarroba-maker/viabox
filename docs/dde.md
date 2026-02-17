@@ -1,7 +1,7 @@
 DDE and TCP/IP data exchange
 ================================================================================
 
-Using the host "localhost" and the service "silverjuke", you can also control
+Using the host "localhost" and the service "viabox", you can also control
 Silverjuke by DDE on Windows or TCP/IP on Linux.
 
 The supported _topics_ are simelar the the command line options:

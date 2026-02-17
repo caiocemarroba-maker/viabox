@@ -90,6 +90,7 @@ public:
 	bool            CanEnqueue          (const wxArrayString& requestedUrls, bool urlsVerified);
 	SjCreditBase    m_creditBase;
 	void            UpdateCreditSpinCtrl();
+	void            UpdateCreditTotalSpinCtrl();
 
 protected:
 	void            ReceiveMsg          (int msg);

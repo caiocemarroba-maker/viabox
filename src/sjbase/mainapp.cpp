@@ -268,8 +268,9 @@ bool SjMainApp::OnInit()
 	// set our logging routines
 	s_logGui = new SjLogGui();
 
-	// log silverjuke and platform version and release information
-	wxLogInfo(wxT("Silverjuke %i.%i.%i-%ibit-%s%s%s started on %s-%ibit, %s, sqlite %s"),
+	// log viabox and platform version and release information
+	//wxLogInfo(wxT("Silverjuke %i.%i.%i-%ibit-%s%s%s started on %s-%ibit, %s, sqlite %s"),
+	wxLogInfo(wxT("Via Box %i.%i.%i-%ibit-%s%s%s started on %s-%ibit, %s, sqlite %s"),
 	          SJ_VERSION_MAJOR, SJ_VERSION_MINOR, SJ_VERSION_REVISION, (int)(sizeof(void*)*8),
 	          #ifdef wxUSE_UNICODE
 	              wxT("u"),
@@ -297,7 +298,7 @@ bool SjMainApp::OnInit()
 	static const wxCmdLineEntryDesc s_cmdLineDesc[] =
 	{
 		// options and swithches, the order _is_ important as we can forward only _one_ command to other instances!
-		// so please move things as "instance" down after "play", "pause" etc, see http://www.silverjuke.net/forum/post.php?p=10433#10433
+		// so please move things as "instance" down after "play", "pause" etc, see http://www.viabox.net/forum/post.php?p=10433#10433
 
 		// player commands
 		{ wxCMD_LINE_SWITCH, NULL, wxT_2("play"),        wxT_2("Play") },
@@ -352,7 +353,7 @@ bool SjMainApp::OnInit()
 		serviceName = g_tools->m_cache.GetTempDir();
 		wxASSERT( serviceName.Last() == wxT('/') );
 	#endif
-	serviceName << wxT("silverjuke");
+	serviceName << wxT("viabox");
 	if( !g_tools->m_instance.IsEmpty() )
 	{
 		serviceName << wxT("-") << g_tools->m_instance;
@@ -361,7 +362,7 @@ bool SjMainApp::OnInit()
 		serviceName << wxT("-ipc");
 	#endif
 
-	// Is there another instance of silverjuke? if so, forward the commmand line
+	// Is there another instance of viabox? if so, forward the commmand line
 	// to this instance. We use the wxSingleInstanceChecker class in addition
 	// for speed reasons - wxClient::MakeConnection() is rather slow.
 	{

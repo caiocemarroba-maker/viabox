@@ -992,6 +992,7 @@ void SjMainFrame::UpdateDisplay()
 	SetSkinTargetValue(IDT_UNQUEUE_ALL, value);
 	SetSkinTargetValue(IDT_MORE_FROM_CURR_ALBUM, value);
 	SetSkinTargetValue(IDT_MORE_FROM_CURR_ARTIST, value);
+	UpdateSongsTotal();
 }
 
 

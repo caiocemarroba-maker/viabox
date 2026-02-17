@@ -1194,7 +1194,7 @@ void SjVirtKeybdFrame::OnMouseUp(wxMouseEvent& event)
 			        && inputReceiver == g_mainFrame->GetInputWindow() )
 			{
 				// this is needed if the option "Search while typing" is OFF,
-				// see http://www.silverjuke.net/forum/topic-1432.html
+				// see http://www.viabox.net/forum/topic-1432.html
 				wxCommandEvent* fwd = new wxCommandEvent(wxEVT_COMMAND_TEXT_ENTER, inputReceiver->GetId());
 				fwd->SetEventObject(inputReceiver);
 				inputReceiver->GetEventHandler()->QueueEvent(fwd);
@@ -1680,7 +1680,7 @@ wxCursor SjVirtKeybdModule::GetStandardCursor()
 	 ||  g_virtKeybd==NULL
 	 || !(g_virtKeybd->m_flags&SJ_VIRTKEYBD_HIDE_CURSOR) )
 	{
-		return *wxSTANDARD_CURSOR; // wxNullCursor does not work!, see http://www.silverjuke.net/forum/topic-1478.html
+		return *wxSTANDARD_CURSOR; // wxNullCursor does not work!, see http://www.viabox.net/forum/topic-1478.html
 	}
 	else
 	{

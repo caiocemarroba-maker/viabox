@@ -734,7 +734,7 @@ bool SjLibraryModule::Callback_ReceiveTrackInfo(SjTrackInfo* trackInfo)
 				trackInfo->m_groupName = sql.GetString(2);
 			}
 
-			// preserve old genre name, if new is unset, new in 2.52beta2, see http://www.silverjuke.net/forum/privmsg.php?mode=quote&p=202
+			// preserve old genre name, if new is unset, new in 2.52beta2, see http://www.viabox.net/forum/privmsg.php?mode=quote&p=202
 			if( trackInfo->m_genreName.IsEmpty() )
 			{
 				trackInfo->m_genreName = sql.GetString(8);
@@ -972,7 +972,7 @@ wxString SjUpdateAlbum::GetSortStr(const wxString& year) const
 	#define SORT_SEP wxT("0z")
 	// SORT_SEP is needed to separate the artist- from the albumname to allow
 	// differing eg. between "Queen" and "Queen Ida And Her Zydeco Band", see
-	// http://www.silverjuke.net/forum/topic-1573.html
+	// http://www.viabox.net/forum/topic-1573.html
 	//
 	// Some notes: The "0" in the sort string is needed for a correct order,
 	// the "z" is  needed to seperate the "0" from numbers in the artist-/albumname
@@ -1146,7 +1146,7 @@ void SjLibraryModule::GetPossibleAlbumArts(long albumId, wxArrayLong& albumArtId
 		}
 	}
 
-	// sort the ids now (should be done before albumArtUrls are set, see http://www.silverjuke.net/forum/topic-2746.html )
+	// sort the ids now (should be done before albumArtUrls are set, see http://www.viabox.net/forum/topic-2746.html )
 	if( !albumArtIds.IsEmpty() )
 	{
 		sql.Query(wxString::Format(wxT("SELECT id FROM arts WHERE id IN(%s) ORDER BY url;"), SjTools::Implode(albumArtIds, wxT(",")).c_str()));
@@ -2496,7 +2496,7 @@ bool SjLibraryModule::HiliteSearchWords(wxString& in)
 			else
 			{
 				cond.Replace(wxT("\\"), wxT("\\\\"));   // do not for get to escape all special characters in the words ...
-				cond.Replace(wxT("$"), wxT("\\$"));     // see http://www.silverjuke.net/forum/post.php?p=14723
+				cond.Replace(wxT("$"), wxT("\\$"));     // see http://www.viabox.net/forum/post.php?p=14723
 				cond.Replace(wxT("+"), wxT("\\+"));
 				cond.Replace(wxT("-"), wxT("\\-"));
 				cond.Replace(wxT("*"), wxT("\\*"));
@@ -4227,7 +4227,7 @@ void SjLibraryModule::PlaybackDone(const wxString& url, unsigned long newStartin
 	oldGainLong     = sql.GetLong(3);
 	oldPlaytimeMs   = sql.GetLong(4);
 
-	// old gain valid? due to a bug in older versions, it may be out of range, see http://www.silverjuke.net/forum/viewtopic.php?t=1007
+	// old gain valid? due to a bug in older versions, it may be out of range, see http://www.viabox.net/forum/viewtopic.php?t=1007
 	double testGain = ::SjLong2Gain(oldGainLong);
 	if( testGain < VALID_GAIN_MIN || testGain > VALID_GAIN_MAX )
 		oldGainLong = 0;

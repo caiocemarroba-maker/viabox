@@ -87,7 +87,7 @@ void SjEqParam::FromFile(const wxString& fileName)
 	wxString ext = SjTools::GetExt(fileName);
 	if( ext == "fx-eq" )
 	{
-		// set from old silverjuke ini-format, AutoLevel() as this equalizer works completely different
+		// set from old viabox ini-format, AutoLevel() as this equalizer works completely different
 		wxString content = SjTools::GetFileContent(fsFile->GetStream(), &wxConvISO8859_1 /*file is a windows file, however, we only use ASCII*/);
 		float bands[10];
 		SjCfgTokenizer cfg;

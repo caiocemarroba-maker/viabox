@@ -270,7 +270,7 @@ long SjQueue::GetNextPos(int flags)
 		// just the next position
 		newPos = m_pos + 1;
 
-		// regard the "avoid boredeom" settings, see http://www.silverjuke.net/forum/topic-2610.html
+		// regard the "avoid boredeom" settings, see http://www.viabox.net/forum/topic-2610.html
 		if( !(flags&SJ_PREVNEXT_LOOKUP_ONLY) )
 		{
 			long betterPos = newPos;
@@ -284,7 +284,7 @@ long SjQueue::GetNextPos(int flags)
 				// we will alter the playlist:
 				//
 				// log some information about this, we had some trouble ourselves to understand this
-				// behaviour, see http://www.silverjuke.net/forum/topic-2866.html
+				// behaviour, see http://www.viabox.net/forum/topic-2866.html
 				// (note that wxLogInfo() should be placed _before_ MovePos() - after MovePos(), the betterPos is unusable ...)
 				//
 				// however, do not pop up a message box, this may disturb alot as this may happen _any_time, not only just after enqueing
@@ -825,7 +825,7 @@ void SjQueue::EnqueueFinish__(long oldPos)
 		long newPos = GetNextPos(SJ_PREVNEXT_INIT);
 		if( newPos != -1 )
 			SetCurrPos(newPos); // in Silverjuke <= 2.52beta15, we set m_pos directly instead of calling SetCurrPos() --
-		// this results in a missing playing mark for the first track played -- s. http://www.silverjuke.net/forum/topic-2593.html
+		// this results in a missing playing mark for the first track played -- s. http://www.viabox.net/forum/topic-2593.html
 	}
 }
 

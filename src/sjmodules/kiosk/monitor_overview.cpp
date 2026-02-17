@@ -120,7 +120,7 @@ void SjMonitorOverview::CalcPositions()
 	wxRect geomOverall;
 	long geomOffsetX = 0x7FFFFFFFL, geomOffsetY = 0x7FFFFFFFL, geomMinH = 0x7FFFFFFFL, geomMinW = 0x7FFFFFFFL;
 	long m, mCount = m_monitors.GetCount();
-	if( mCount <= 0 ) // seems not to be yet initialized, needed for Win98, see http://www.silverjuke.net/forum/topic-1522.html
+	if( mCount <= 0 ) // seems not to be yet initialized, needed for Win98, see http://www.viabox.net/forum/topic-1522.html
 		return;
 
 	for( m = 0; m < mCount; m++ )

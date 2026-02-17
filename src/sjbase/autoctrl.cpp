@@ -1029,7 +1029,7 @@ wxString SjAutoCtrl::GetAutoPlayUrl()
 		if( m_autoPlayedTrackIds.Index(selectedTrackId)==wxNOT_FOUND )
 		{
 			// not in internal cache,
-			// also check agains the "avoid boredom" settings, see http://www.silverjuke.net/forum/topic-2998.html
+			// also check agains the "avoid boredom" settings, see http://www.viabox.net/forum/topic-2998.html
 			sql.Query(wxString::Format(wxT("SELECT leadartistname, trackname FROM tracks WHERE id=%lu;"), selectedTrackId));
 			if( !sql.Next() )
 				break; // okay, fine track found

@@ -817,7 +817,7 @@ bool SjImgThreadObj::LoadFromFile()
 		if( m_url.StartsWith("http:") || m_url.StartsWith("https:") )
 		{
 			// wxFileSystem uses wxHttp/wxSocket may crashe under GTK when using threads on wx2.8, 3.0 etc.,
-			// see https://github.com/r10s/silverjuke/issues/54 and the message
+			// see https://github.com/r10s/viabox/issues/54 and the message
 			// "../src/unix/sockunix.cpp(143): assert "m_fd != INVALID_SOCKET" failed in OnReadWaiting(): invalid socket ready for reading?"
 			// so, if available, we just prefer the UPnP routines
 			wxString tempFile;

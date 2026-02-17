@@ -35,7 +35,7 @@
 enum SjHomepageId
 {
     // Do not change any of the given values! These values are used from
-    // www.silverjuke.net/go/ for forwarding to the correct page.
+    // www.viabox.net/go/ for forwarding to the correct page.
 	SJ_HOMEPAGE_INDEX                  = 0,
 	SJ_HOMEPAGE_MODULES                = 3,
 	SJ_HOMEPAGE_MODULES_SKINS          = 5,

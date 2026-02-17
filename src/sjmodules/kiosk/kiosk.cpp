@@ -205,16 +205,22 @@ private:
 	// Credit page
 	wxPanel*        CreateCreditPage    (wxWindow* parent);
 	void            UpdateCreditCtrls   ();
+	void            UpdateCreditTotalCtrls  ();
+//	void            GetResumeFile       (wxCommandEvent&);
+//      void            SaveToResumeFile    (wxCommandEvent&);
 	void            OnCreditUseCheck    (wxCommandEvent&);
 	void            OnCreditSaveCheck   (wxCommandEvent&);
 	void            OnCreditDDECheck    (wxCommandEvent&);
 	void            OnCreditShortcutEditButton(wxCommandEvent&);
 	void            OnCreditCurrSpinCtrl(wxSpinEvent&);
+	void            OnCreditTotalSpinCtrl(wxSpinEvent&);
 	void            OnCreditCurrText    (wxCommandEvent&) { wxSpinEvent fwd; OnCreditCurrSpinCtrl(fwd); }
+	void            OnCreditTotalText   (wxCommandEvent&) { wxSpinEvent fwd; OnCreditTotalSpinCtrl(fwd); }
 	wxCheckBox*     m_creditUseCheckBox;
 	wxCheckBox*     m_creditSaveCheckBox;
 	wxCheckBox*     m_creditDDECheckBox;
 	wxButton*       m_creditShortcutEditButton;
+	wxSpinCtrl*     m_creditTotalSpinCtrl;
 	wxSpinCtrl*     m_creditCurrSpinCtrl;
 
 	// Common
@@ -249,6 +255,8 @@ private:
 #define IDC_CREDIT_SHORTCUT_EDIT        (IDM_FIRSTPRIVATE+119)
 #define IDC_CREDIT_SAVE                 (IDM_FIRSTPRIVATE+120)
 #define IDC_CREDIT_CURR                 (IDM_FIRSTPRIVATE+121)
+//RBS
+#define IDC_CREDIT_TOTAL                (IDM_FIRSTPRIVATE+122)
 #define IDC_MONITOR_CHOICE              (IDM_FIRSTPRIVATE+123)
 #define IDC_MONITOR_TIMER               (IDM_FIRSTPRIVATE+130)
 
@@ -284,6 +292,8 @@ BEGIN_EVENT_TABLE(SjKioskConfigPage, wxPanel)
 	EVT_CHECKBOX                (IDC_CREDIT_SAVE,           SjKioskConfigPage::OnCreditSaveCheck            )
 	EVT_SPINCTRL                (IDC_CREDIT_CURR,           SjKioskConfigPage::OnCreditCurrSpinCtrl         )
 	EVT_TEXT                    (IDC_CREDIT_CURR,           SjKioskConfigPage::OnCreditCurrText             )
+	EVT_SPINCTRL                (IDC_CREDIT_TOTAL,          SjKioskConfigPage::OnCreditTotalSpinCtrl        ) // RBS
+	EVT_TEXT                    (IDC_CREDIT_TOTAL,          SjKioskConfigPage::OnCreditTotalText            ) // RBS
 
 END_EVENT_TABLE()
 
@@ -439,7 +449,7 @@ wxPanel* SjKioskConfigPage::CreateStartPage(wxWindow* parent)
 	sizer1->Add(1, SJ_DLG_SPACE); // some space
 
 	wxStaticText* staticText = new wxStaticText(m_tempPanel, -1,
-	        _("Silverjuke provides a so called \"kiosk mode\" which allows you to run the program\nfull screen with a defined functionality."));
+	        _("Via Box provides a so called \"kiosk mode\" which allows you to run the program\nfull screen with a defined functionality."));
 	staticText->Enable(m_optionsAvailable);
 	sizer1->Add(staticText, 0, wxALL, SJ_DLG_SPACE);
 
@@ -1246,7 +1256,7 @@ wxPanel* SjKioskConfigPage::CreateNumpadPage(wxWindow* parent)
 	sizer1->Add(1, SJ_DLG_SPACE*2); // some space
 
 	wxStaticText* staticText = new wxStaticText(m_tempPanel, -1,
-	        _("Using the Numpad plus some other special keys, you can control Silverjuke completely\nby the keyboard or some other hardware buttons. In this case, you'll enqueue new\ntracks by entering the unique numbers shown beside the album and track names."));
+	        _("Using the Numpad plus some other special keys, you can control Via Box completely\nby the keyboard or some other hardware buttons. In this case, you'll enqueue new\ntracks by entering the unique numbers shown beside the album and track names."));
 	sizer1->Add(staticText, 0, wxLEFT|wxBOTTOM|wxRIGHT, SJ_DLG_SPACE);
 
 	// use?
@@ -1382,6 +1392,12 @@ void SjKioskConfigPage::OnNumpadEditKeys(wxCommandEvent&)
 }
 
 
+
+
+
+
+
+
 /*******************************************************************************
  * SjKioskModule - Credit system
  ******************************************************************************/
@@ -1431,10 +1447,21 @@ wxPanel* SjKioskConfigPage::CreateCreditPage(wxWindow* parent)
 
 	UpdateCreditCtrls();
 
+
+        // credito total RBS
+        sizer2 = new wxBoxSizer(wxHORIZONTAL);
+        sizer1->Add(sizer2, 0, wxLEFT|wxBOTTOM|wxRIGHT, SJ_DLG_SPACE);
+
+        sizer2->Add(new wxStaticText(m_tempPanel, -1, _("Total:")), 0, wxALIGN_CENTER_VERTICAL, SJ_DLG_SPACE);
+
+        m_creditTotalSpinCtrl = AddSpinCtrl(sizer2, g_kioskModule->m_creditBase.GetCreditTotal(), 0, 9999, IDC_CREDIT_TOTAL);
+
+
+
 	return m_tempPanel;
 }
 
-
+//RBS
 void SjKioskConfigPage::UpdateCreditCtrls()
 {
 	bool creditSystemEnabled = m_creditUseCheckBox->IsChecked();
@@ -1451,6 +1478,26 @@ void SjKioskConfigPage::UpdateCreditCtrls()
 	m_creditCurrSpinCtrl->Enable(creditSystemEnabled);
 }
 
+//RBS
+
+/*
+void SjKioskConfigPage::UpdateCreditCtrls()
+{
+       bool creditSystemEnabled = m_creditUseCheckBox->IsChecked();
+       bool creditDDEEnabled = (g_kioskModule->m_creditBase.GetFlags()&SJ_CREDITBASEF_LISTEN_TO_DDE)!=0;
+
+       m_creditSaveCheckBox->Enable(creditSystemEnabled);
+       m_creditSaveCheckBox->SetValue(creditSystemEnabled && (g_kioskModule->m_creditBase.GetFlags()&SJ_CREDITBASEF_SAVE_CREDITS)!=0);
+
+       m_creditDDECheckBox->Enable(creditSystemEnabled);
+       m_creditDDECheckBox->SetValue(creditSystemEnabled && creditDDEEnabled);
+
+       m_creditShortcutEditButton->Enable(creditSystemEnabled && creditDDEEnabled);
+
+       m_creditCurrSpinCtrl->Enable(creditSystemEnabled);
+}
+
+*/
 
 void SjKioskConfigPage::OnCreditUseCheck(wxCommandEvent&)
 {
@@ -1484,6 +1531,15 @@ void SjKioskConfigPage::OnCreditCurrSpinCtrl(wxSpinEvent&)
 {
 	int newCredit = m_creditCurrSpinCtrl->GetValue();
 	g_kioskModule->m_creditBase.AddCredit(newCredit, SJ_ADDCREDIT_SET_TO_NULL_BEFORE_ADD);
+}
+
+
+
+// RBS
+void SjKioskConfigPage::OnCreditTotalSpinCtrl(wxSpinEvent&)
+{
+        int newCreditTotal = m_creditTotalSpinCtrl->GetValue();
+        g_kioskModule->m_creditBase.AddCredit(newCreditTotal, VJ_ADDCREDIT_SET_TO_NULL_BEFORE_ADD);
 }
 
 
@@ -2143,6 +2199,24 @@ void SjKioskModule::UpdateCreditSpinCtrl()
 			g_kioskConfigPage->m_creditCurrSpinCtrl->SetValue(newValue);
 		}
 	}
+}
+
+
+
+
+// RBS
+void SjKioskModule::UpdateCreditTotalSpinCtrl()
+{
+        if( g_kioskConfigPage
+         && g_kioskConfigPage->m_creditTotalSpinCtrl )
+        {
+                long oldValueTotal = g_kioskConfigPage->m_creditTotalSpinCtrl->GetValue();
+                long newValueTotal = m_creditBase.GetCreditTotal();
+                if( newValueTotal != oldValueTotal )
+                {
+                        g_kioskConfigPage->m_creditTotalSpinCtrl->SetValue(newValueTotal);
+                }
+        }
 }
 
 

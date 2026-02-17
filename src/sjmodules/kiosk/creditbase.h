@@ -31,10 +31,13 @@
 
 
 #define SJ_ADDCREDIT_SET_TO_NULL_BEFORE_ADD 0x01
+#define VJ_ADDCREDIT_SET_TO_NULL_BEFORE_ADD 0x01
+
 #define SJ_ADDCREDIT_FROM_DDE               0x02
 
 #define SJ_CREDITBASEF_ENABLED          0x00010000L
 #define SJ_CREDITBASEF_SAVE_CREDITS     0x00020000L
+#define VJ_CREDITBASEF_SAVE_CREDITS     0x00040000L // RBS
 #define SJ_CREDITBASEF_LISTEN_TO_DDE    0x00000001L // +command line +TCP/IP +shortcuts
 #define SJ_CREDITBASEF_DEFAULT          0x0000FFFFL
 
@@ -46,6 +49,10 @@ public:
 	                ~SjCreditBase           ();
 
 	long            GetCredit               () { return m_creditCount; }
+        // RBS
+	long            GetCreditTotal          () { return m_creditCountTotal; }
+
+
 
 	// CheckAndDecreaseCredit() should be called before enqueing titles,
 	// normally, this function is only called by SjKioskModule::CanEnqueue()
@@ -78,8 +85,10 @@ public:
 private:
 	long            m_flags;
 	long            m_creditCount;
+	long            m_creditCountTotal;
 
 	void            SaveCreditCount         ();
+	void            SaveCreditCountTotal    ();
 	bool            ShowCreditInDisplay     () const;
 };
 

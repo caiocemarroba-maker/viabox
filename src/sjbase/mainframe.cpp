@@ -572,7 +572,7 @@ bool SjMainFrame::DragNDrop(SjDragNDropAction action,
 				if( s_currWindow==g_mainFrame || s_currWindow->GetParent()==g_mainFrame )
 					s_currWindow->SetCursor(SjVirtKeybdModule::GetStandardCursor());
 				else
-					s_currWindow->SetCursor(*wxSTANDARD_CURSOR); // wxNullCursor does not work!, see http://www.silverjuke.net/forum/topic-1478.html
+					s_currWindow->SetCursor(*wxSTANDARD_CURSOR); // wxNullCursor does not work!, see http://www.viabox.net/forum/topic-1478.html
 			}
 
 			s_currWindow = newWindow; // may be NULL
@@ -621,7 +621,7 @@ bool SjMainFrame::DragNDrop(SjDragNDropAction action,
 			{
 				inHereRet = -1;
 
-				// Item moved outside silverjuke: end imaged drag'n'drop and
+				// Item moved outside viabox: end imaged drag'n'drop and
 				// switch to normal drag'n'drop to allow other applications to receive data.
 				//
 				// As there were some problems some times, I added lots of "crash precautions"
@@ -673,7 +673,7 @@ bool SjMainFrame::DragNDrop(SjDragNDropAction action,
 					if( s_currWindow==g_mainFrame || s_currWindow->GetParent()==g_mainFrame )
 						s_currWindow->SetCursor(SjVirtKeybdModule::GetStandardCursor());
 					else
-						s_currWindow->SetCursor(*wxSTANDARD_CURSOR); // wxNullCursor does not work!, see http://www.silverjuke.net/forum/topic-1478.html
+						s_currWindow->SetCursor(*wxSTANDARD_CURSOR); // wxNullCursor does not work!, see http://www.viabox.net/forum/topic-1478.html
 				}
 				else if( s_currWindow )
 				{
@@ -713,7 +713,7 @@ bool SjMainFrame::DragNDrop(SjDragNDropAction action,
 				if( s_currWindow==g_mainFrame || s_currWindow->GetParent()==g_mainFrame )
 					s_currWindow->SetCursor(SjVirtKeybdModule::GetStandardCursor());
 				else
-					s_currWindow->SetCursor(*wxSTANDARD_CURSOR); // wxNullCursor does not work!, see http://www.silverjuke.net/forum/topic-1478.html
+					s_currWindow->SetCursor(*wxSTANDARD_CURSOR); // wxNullCursor does not work!, see http://www.viabox.net/forum/topic-1478.html
 			}
 		}
 
@@ -1028,7 +1028,7 @@ SjMainFrame::SjMainFrame(SjMainApp* mainApp, int id, long skinFlags, const wxPoi
 		}
 
 		// add translation catalog
-		m_locale.AddCatalog(wxT("silverjuke"));
+		m_locale.AddCatalog(wxT("viabox"));
 	}
 
 	/* (/) Crash handling (after i18n for localized messages)
@@ -1599,10 +1599,37 @@ bool SjMainFrame::VisSwitcherIsCursorKey( int targetId) {
          || targetId == IDT_WORKSPACE_KEY_DOWN ;
 
 }
+
+
+void SjMainFrame::UpdateSongsTotal()
+{
+    bool bWasPlayed = false;
+    int nSongsOnHold = 0;
+    int nCount = m_player.m_queue.GetCount();
+    int nCurrPos  = m_player.m_queue.GetCurrPos();
+    if ( 0 < nCount  ) {
+        if (bWasPlayed = m_player.m_queue.WasPlayed(nCount-1)) {
+            nSongsOnHold = 0 < nCurrPos ? 1 : 0;
+        } else {
+            nSongsOnHold = nCount - nCurrPos;
+        }
+    }
+
+    SjSkinValue v;
+    v.value  = SJ_VFLAG_CENTER;
+    v.string = wxT("oo");
+    //v.string.Printf(wxT("%i"),(int)m_player.m_queue.GetWaitingCount());
+    v.string.Printf(wxT("%i"), nSongsOnHold);
+    g_mainFrame->SetSkinTargetValue(IDT_SONGS_ON_HOLD, v);
+
+    fprintf(stderr, "TTT SelectedCount: count:%d currpos:%d hold:%d was:%d\n", nCount,
+            nCurrPos, nSongsOnHold, (int)bWasPlayed);
+}
+
 void SjMainFrame::OnSkinTargetEvent(int targetId, SjSkinValue& value, long accelFlags)
 {
 	/* hier sollten wirklich alle Fäden zusammenlaufen damit die Tastaturbedienung auch ohne
-	Accel-Table funktioniert, vgl. http://www.silverjuke.net/forum/topic-3197.html */
+	Accel-Table funktioniert, vgl. http://www.viabox.net/forum/topic-3197.html */
 
 	GotInputFromUser();
 	bool bCursorKey = VisSwitcherIsCursorKey(targetId);
@@ -1724,7 +1751,7 @@ void SjMainFrame::OnSkinTargetEvent(int targetId, SjSkinValue& value, long accel
 				}
 				break;
 
-			case IDO_UNQUEUE_MARKED: // should go here, not to OnDisplayCommand(), see http://www.silverjuke.net/forum/topic-3197.html
+			case IDO_UNQUEUE_MARKED: // should go here, not to OnDisplayCommand(), see http://www.viabox.net/forum/topic-3197.html
 			case IDO_UNQUEUE_ALL_BUT_MARKED:
 				if( IsOpAvailable(SJ_OP_UNQUEUE) )
 				{
@@ -1734,14 +1761,14 @@ void SjMainFrame::OnSkinTargetEvent(int targetId, SjSkinValue& value, long accel
 				}
 				break;
 
-			case IDO_EDITQUEUE: // should go here, not to OnDisplayCommand(), see http://www.silverjuke.net/forum/topic-3197.html
+			case IDO_EDITQUEUE: // should go here, not to OnDisplayCommand(), see http://www.viabox.net/forum/topic-3197.html
 				if( IsAllAvailable() )
 				{
 					g_tagEditorModule->OpenTagEditor(new SjDisplayEditDlg());
 				}
 				break;
 
-			case IDO_RATINGQUEUE00: // should go here, not to OnDisplayCommand(), see http://www.silverjuke.net/forum/topic-3197.html
+			case IDO_RATINGQUEUE00: // should go here, not to OnDisplayCommand(), see http://www.viabox.net/forum/topic-3197.html
 			case IDO_RATINGQUEUE01:
 			case IDO_RATINGQUEUE02:
 			case IDO_RATINGQUEUE03:
@@ -1753,7 +1780,7 @@ void SjMainFrame::OnSkinTargetEvent(int targetId, SjSkinValue& value, long accel
 				}
 				break;
 
-			case IDO_EXPLOREQUEUE: // should go here, not to OnDisplayCommand(), see http://www.silverjuke.net/forum/topic-3197.html
+			case IDO_EXPLOREQUEUE: // should go here, not to OnDisplayCommand(), see http://www.viabox.net/forum/topic-3197.html
 				if( IsAllAvailable() && m_contextMenuClickedUrls.GetCount() )
 				{
 					g_tools->ExploreUrl(m_contextMenuClickedUrls[0]);

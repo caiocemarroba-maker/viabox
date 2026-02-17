@@ -475,7 +475,7 @@ int wxSqlt::FetchQuery_()
 	else
 	{
 		// error - we do not log this as this error may occur under mysterious circumstances - see
-		// http://www.silverjuke.net/forum/viewtopic.php?t=900
+		// http://www.viabox.net/forum/viewtopic.php?t=900
 		#ifdef __WXDEBUG__
 		const char* err = sqlite3_errmsg(m_db->m_sqlite);
 		SQLITE3_TO_WXSTRING(err)

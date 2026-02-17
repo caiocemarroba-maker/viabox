@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Silverjuke\n"
 "Report-Msgid-Bugs-To: r10s@b44t.com\n"
-"POT-Creation-Date: 2016-03-12 14:44+0100\n"
+"POT-Creation-Date: 2019-05-22 19:22-0300\n"
 "PO-Revision-Date: 2011-06-30 20:39+0100\n"
 "Last-Translator: David Minář <antro@pb.cz>\n"
 "Language-Team: Czech\n"
@@ -136,6 +136,11 @@ msgstr ""
 "\n"
 "Zrušit proces aktualizace?"
 
+#, fuzzy
+#| msgid "Cleanup index..."
+msgid "Cleanup caches"
+msgstr "Vyčištění indexu..."
+
 #, c-format
 msgid ""
 "%s is currently playing. Do you want to stop the playing track and exit %s?"
@@ -204,6 +209,12 @@ msgstr "Spustit přehrávání na zařadit"
 
 msgid "Remove played tracks from queue"
 msgstr "Odstranit přehrané skladby z playlistu"
+
+msgid "Interrupt the playing track and continue with the new selection?"
+msgstr ""
+
+msgid "Interrupt playing track"
+msgstr ""
 
 msgid "More from current album"
 msgstr "Více z aktuálního alba"
@@ -936,6 +947,11 @@ msgid "Ask before clearing the playlist"
 msgstr "Zeptat se před vymazáním playlistu"
 
 #, fuzzy
+#| msgid "Ask before enqueuing multiple tracks"
+msgid "Ask before interrupting tracks"
+msgstr "Zeptat se před přidáním více stop"
+
+#, fuzzy
 #| msgid "Ask before changing my rating"
 msgid "Ask before changing the rating"
 msgstr "Zeptat se na hodnocení před změnou"
@@ -1533,8 +1549,13 @@ msgstr "Virtuální klávesnice"
 msgid "Credit system"
 msgstr "Kreditní systém"
 
+#, fuzzy
+#| msgid ""
+#| "Silverjuke provides a so called \"kiosk mode\" which allows you to run "
+#| "the program\n"
+#| "full screen with a defined functionality."
 msgid ""
-"Silverjuke provides a so called \"kiosk mode\" which allows you to run the "
+"Via Box provides a so called \"kiosk mode\" which allows you to run the "
 "program\n"
 "full screen with a defined functionality."
 msgstr ""
@@ -1649,8 +1670,16 @@ msgstr "Průhlednost:"
 msgid "Hide cursor"
 msgstr "Skrýt kurzor"
 
+#, fuzzy
+#| msgid ""
+#| "Using the Numpad plus some other special keys, you can control Silverjuke "
+#| "completely\n"
+#| "by the keyboard or some other hardware buttons. In this case, you'll "
+#| "enqueue new\n"
+#| "tracks by entering the unique numbers shown beside the album and track "
+#| "names."
 msgid ""
-"Using the Numpad plus some other special keys, you can control Silverjuke "
+"Using the Numpad plus some other special keys, you can control Via Box "
 "completely\n"
 "by the keyboard or some other hardware buttons. In this case, you'll enqueue "
 "new\n"
@@ -1695,6 +1724,11 @@ msgstr "Pamatuje si vložený kredit po spuštění programu"
 
 msgid "Current credit:"
 msgstr "Aktuální kredit:"
+
+#, fuzzy
+#| msgid "Total time"
+msgid "Total:"
+msgstr "Celkový čas"
 
 msgid "Please enter your password to exit the kiosk mode."
 msgstr "Zadejte své heslo pro ukončení kiosk režimu."
@@ -2316,8 +2350,10 @@ msgstr "Neznámá skladba"
 msgid "Unknown artist"
 msgstr "Neznámý interpret"
 
-msgid "Add a server containing music-files"
-msgstr "Přidat server obsahující hudební soubory"
+#, fuzzy
+#| msgid "Add a DAAP-/iTunes-server"
+msgid "Add an HTTP server"
+msgstr "Add a DAAP-/iTunes-server"
 
 msgid "Use server:"
 msgstr "Použít server:"
@@ -2633,6 +2669,9 @@ msgstr "Použít %s-soubory"
 msgid "Please select a directory with images"
 msgstr "Vyberte prosím adresář s obrázky"
 
+msgid "Scroll"
+msgstr ""
+
 msgid "Title overlay"
 msgstr ""
 
@@ -2650,6 +2689,9 @@ msgstr "Zobrazit spektrum"
 
 msgid "Show oscilloscope"
 msgstr "Zobrazit osciloskop"
+
+msgid "Mono"
+msgstr ""
 
 msgid "Show starfield"
 msgstr "Zobrazit hvězdné pole"
@@ -3028,8 +3070,11 @@ msgstr "Soubor \"%s\" neexistuje."
 msgid "Cannot execute \"%s\"."
 msgstr "Nelze spustit \"%s\"."
 
-msgid "Please use the operating system to set Silverjuke to an exclusive mode."
+msgid "Please use the operating system to set Via Box to an exclusive mode."
 msgstr ""
+
+#~ msgid "Add a server containing music-files"
+#~ msgstr "Přidat server obsahující hudební soubory"
 
 #, fuzzy
 #~| msgid "Only initalize system volume"
@@ -3202,7 +3247,7 @@ msgstr ""
 #~ msgid "These options are available if you buy Silverjuke."
 #~ msgstr "Tyto možnosti jsou k dispozici v registrované verzi Silverjuke."
 
-# The first %s will be replaced by the program name (usually "Silverjuke"), the second and third %s will be replaced by a file type (eg. "MP3"), the fourth %s will be replaced by the URL to search for modules (eg. "http://www.silverjuke.net/en/modules.html".
+# The first %s will be replaced by the program name (usually "Silverjuke"), the second and third %s will be replaced by a file type (eg. "MP3"), the fourth %s will be replaced by the URL to search for modules (eg. "http://www.viabox.net/en/modules.html".
 #~ msgid ""
 #~ "%s has not found an %s-decoder on your system. If you want to play %s-"
 #~ "files, you should install a module for this purpose.\n"
@@ -3303,9 +3348,6 @@ msgstr ""
 #~ msgid "Arguments for \"%s\""
 #~ msgstr "Argumenty pro \"%s\""
 
-#~ msgid "Total time"
-#~ msgstr "Celkový čas"
-
 #~ msgid "Cannot calculate the total time"
 #~ msgstr "Nelze spočítat celkový čas"
 
@@ -3393,7 +3435,7 @@ msgstr ""
 #~ "používat \n"
 #~ "tento program."
 
-# The first %s will be replaced by the program name, usually "Silverjuke". The second %s will be replaced by the name of the website, eg. www.silverjuke.net
+# The first %s will be replaced by the program name, usually "Silverjuke". The second %s will be replaced by the name of the website, eg. www.viabox.net
 #~ msgid ""
 #~ "Further information about purchasing %s licences\n"
 #~ "are available at %s."
@@ -3401,7 +3443,7 @@ msgstr ""
 #~ "Další informace o nákupu %s licencí\n"
 #~ "je k dispozici na adrese %s."
 
-# %s will be replaced by the name of a website, eg. www.silverjuke.net
+# %s will be replaced by the name of a website, eg. www.viabox.net
 #~ msgid "Open %s..."
 #~ msgstr "Otevřít %s..."
 
@@ -3570,9 +3612,6 @@ msgstr ""
 
 #~ msgid "DAAP-/iTunes-client"
 #~ msgstr "DAAP-/iTunes-client"
-
-#~ msgid "Add a DAAP-/iTunes-server"
-#~ msgstr "Add a DAAP-/iTunes-server"
 
 #~ msgid ""
 #~ "With Silverjuke's HTTP server you can access the program and your music "

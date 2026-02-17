@@ -111,7 +111,7 @@ void SjHelpDialog::OnCommand(wxCommandEvent& event)
 	switch( event.GetId() )
 	{
 		case IDO_LINKCLICKED:
-			// needed at least for "more..." in the page after buying silverjuke
+			// needed at least for "more..." in the page after buying viabox
 			long topicId;
 			if( !m_htmlWindow->GetClickedLink().ToLong(&topicId, 10) ) { topicId = 0; }
 			GotoTopic((SjHelpTopicId)topicId);
@@ -183,10 +183,10 @@ wxString SjHelpDialog::GetAboutTopic() const
 	}
 	else
 	{
-		ret += "<p>http://www.silverjuke.net</p>";
+		ret += "<p>http://www.viapratica.com.br</p>";
 	}
 
-	ret += "<p>Copyright &copy; 2018 Silverjuke contributors</p>"
+	ret += "<p>Copyright &copy; 2019 Via Box contributors</p>"
 	       "<p><a href=\"page:3\">Contributors and License notes...</a></p>"
 	       "</center>";
 
@@ -261,7 +261,7 @@ wxString SjHelpDialog::GetCreditsTopic() const
 			"</li>"
 
 			"<li>"
-				"The Silverjuke core is available as free software under the GPL. See the GNU General Public License for more details."
+				"The Via Box core is available as free software under the GPL. See the GNU General Public License for more details."
 				"<br />"
 			"</li>"
 

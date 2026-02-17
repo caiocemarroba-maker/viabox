@@ -58,6 +58,24 @@ SjCreditBase::SjCreditBase()
 		}
 	}
 
+//rbs
+
+
+        // ler credito acumulado (uso mensal)
+        //m_creditCountTotal = 0;
+       // if( m_flags & VJ_CREDITBASEF_SAVE_CREDITS )
+       // {
+                m_creditCountTotal = g_tools->m_config->Read(wxT("kiosk/creditototal"), 0L);
+                if( m_creditCountTotal < 0 )
+                {
+                        m_creditCountTotal = 0;
+                }
+
+
+
+
+
+
 	// init the credit by the command line
 	if( m_flags & SJ_CREDITBASEF_LISTEN_TO_DDE )
 	{
@@ -65,13 +83,17 @@ SjCreditBase::SjCreditBase()
 		if( SjMainApp::s_cmdLine->Found(wxT("setcredit"), &addCredits) )
 		{
 			m_creditCount = addCredits;
+			m_creditCountTotal = addCredits;
 			SaveCreditCount();
+			SaveCreditCountTotal();
 		}
 
 		if( SjMainApp::s_cmdLine->Found(wxT("addcredit"), &addCredits) )
 		{
 			m_creditCount += addCredits;
+			m_creditCountTotal += addCredits;
 			SaveCreditCount();
+			SaveCreditCountTotal();
 		}
 	}
 
@@ -103,6 +125,7 @@ bool SjCreditBase::CheckAndDecreaseCredit(long requestedTitleCount)
 		m_creditCount -= requestedTitleCount;
 
 		SaveCreditCount();
+		SaveCreditCountTotal();
 
 		UpdateSkinTarget();
 
@@ -139,6 +162,24 @@ void SjCreditBase::AddCredit(long titleCount, long addFlags)
 		m_creditCount += titleCount;
 	}
 
+
+        // RBS  change credit count
+        long oldCreditCountTotal = m_creditCountTotal;
+
+        if( addFlags & VJ_ADDCREDIT_SET_TO_NULL_BEFORE_ADD )
+        {
+                m_creditCountTotal = 0;
+        }
+
+        if( titleCount > 0 )
+        {
+                m_creditCountTotal += titleCount;
+        }
+
+
+
+
+
 	// credit count really changed?
 	if( oldCreditCount != m_creditCount )
 	{
@@ -146,11 +187,25 @@ void SjCreditBase::AddCredit(long titleCount, long addFlags)
 			g_mainFrame->SetDisplayMsg( wxString::Format(_("Credit: %i"), (int)m_creditCount));
 
 		SaveCreditCount();
+		SaveCreditCountTotal();
 
 		g_kioskModule->UpdateCreditSpinCtrl();
 
 		UpdateSkinTarget();
 	}
+
+        // RBS
+        if( oldCreditCountTotal != m_creditCountTotal )
+        {
+                //if( ShowCreditInDisplay() )
+                //        g_mainFrame->SetDisplayMsg( wxString::Format(_("Credit: %i"), (int)m_creditCount));
+
+                SaveCreditCountTotal();
+                g_kioskModule->UpdateCreditTotalSpinCtrl();
+
+        }
+
+
 }
 
 
@@ -193,8 +248,21 @@ void SjCreditBase::SetFlag(long flag, bool set)
 void SjCreditBase::SaveCreditCount()
 {
 	g_tools->m_config->Write(wxT("kiosk/creditsaved"), m_creditCount);
+
+
+       // RBS
 }
 
+
+void SjCreditBase::SaveCreditCountTotal()
+{
+
+       g_tools->m_config->Write(wxT("kiosk/creditototal"), m_creditCountTotal);
+
+
+}
+
+// RBS Fim
 
 bool SjCreditBase::ShowCreditInDisplay() const
 {
@@ -207,7 +275,7 @@ bool SjCreditBase::ShowCreditInDisplay() const
 bool SjCreditBase::IsCreditSystemEnabled()
 {
 	/* This function has an add. static implementation as the state may be important,
-	 * before g_kioskModule is set up, see http://www.silverjuke.net/forum/topic-2943.html
+	 * before g_kioskModule is set up, see http://www.viabox.net/forum/topic-2943.html
 	 */
 
 	static long s_flags = -1;

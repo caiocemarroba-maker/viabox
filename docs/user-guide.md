@@ -47,7 +47,7 @@ Silverjuke User Guide
 First Steps
 ================================================================================
 
-After you have downloaded Silverjuke from http://www.silverjuke.net/ and started
+After you have downloaded Silverjuke from http://www.viabox.net/ and started
 the program, you have to add your music files to your music library. For this
 purpose, just drag the folders with music files to the main window.
 
@@ -1582,7 +1582,7 @@ Options for the `[tageditor]` section of the globals.ini file:
 - `ratinguser =` Some tag formats (eg. ID3) support multiple ratings in a single
   file.  With this setting you define the user, ratings should be read or written
   for.  Normally, the user is defined by an E-Mail-Address.  Defaults to 
-  `r@silverjuke.net`
+  `r@viabox.net`
 - `tagflags =` 1=read ratings, 2=write ratings, 4=read others ratings, 8=change
   others ratings, 16=remove others ratings, 32=add leading zeros to track and
   disk numbers.  You can use more than one flag by adding them.  Defaults to 15

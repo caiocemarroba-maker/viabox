@@ -195,7 +195,7 @@ bool SjAccelModule::FirstLoad()
 		//  - max. 100 menu entries / shortcuts allowed for ALL scripts together
 		//  - all menu entries of ALL scripts are defined by a zero-based index
 		//  - therefore program.removeMenuEntry() or sth. like that will disturb the shortcuts and need a re-assign
-		// see also http://www.silverjuke.net/forum/topic-1726.html
+		// see also http://www.viabox.net/forum/topic-1726.html
 		int i, iCount = (IDO_SCRIPT_MENU99-IDO_SCRIPT_MENU00)+1, id;
 		for( i = 0; i < iCount; i++ )
 		{

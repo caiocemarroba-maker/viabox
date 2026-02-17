@@ -480,7 +480,7 @@ void ID3v2_Tag::setGenre(const wxString &s)
 	}
 
 	// we write the Genre following the ID3v2.4 standard - a numberic value string as "11" or a string as "Oldie".
-	// (for ID3v2.4 this would be "(11)" or "Oldie" or "(11)Oldie" - maybe we should write only the name, however, we should check all major players before doing so, see also https://github.com/r10s/silverjuke/issues/53 )
+	// (for ID3v2.4 this would be "(11)" or "Oldie" or "(11)Oldie" - maybe we should write only the name, however, we should check all major players before doing so, see also https://github.com/r10s/viabox/issues/53 )
 	int index = ID3v1_Tag::lookupGenreIndex(s);
 	if(index != 255)
 	{

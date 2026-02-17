@@ -6,7 +6,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: silverjuke 16.3.1\n"
+"Project-Id-Version: viabox 16.3.1\n"
 "Report-Msgid-Bugs-To: r10s@b44t.com\n"
 "POT-Creation-Date: 2016-03-12 14:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"

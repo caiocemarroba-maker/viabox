@@ -332,8 +332,8 @@ bool SjServerScannerModule::IterateCsvOverHttp(SjColModule* receiver, SjServerSc
 	// open the CSV file
 	csvFileName =
 	    currSource->GetPath(options->Lookup(wxT("csv-file"), wxT("")))
-	    //"http://me:dummy@localhost/silverjuke/music/media/servlet/secure/text/plain/jukeboxwk41.csv"
-	    //"http://silverjuke:123456@music.silverjuke.net/media/servlet/secure/text/plain/jukeboxwk41.csv"
+	    //"http://me:dummy@localhost/viabox/music/media/servlet/secure/text/plain/jukeboxwk41.csv"
+	    //"http://viabox:123456@music.viabox.net/media/servlet/secure/text/plain/jukeboxwk41.csv"
 	    ;
 
 	g_tools->m_cache.RemoveFromCache(csvFileName, TRUE/*never cache again*/);

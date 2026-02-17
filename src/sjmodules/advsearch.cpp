@@ -442,7 +442,7 @@ long SjRuleControls::GetRuleInputType()
 	{
 		case SJ_FIELDOP_IS_SET:
 		case SJ_FIELDOP_IS_UNSET:
-			ret &= ~(INPUTTYPE_UNITS_STATIC | INPUTTYPE_UNITS_CHOICE); // INPUTTYPE_UNITS_CHOICE added for version 2.72, see http://www.silverjuke.net/forum/topic-2852.html
+			ret &= ~(INPUTTYPE_UNITS_STATIC | INPUTTYPE_UNITS_CHOICE); // INPUTTYPE_UNITS_CHOICE added for version 2.72, see http://www.viabox.net/forum/topic-2852.html
 			break;
 
 		case SJ_FIELDOP_IS_IN_RANGE:
@@ -1928,7 +1928,7 @@ void SjAdvSearchDialog::OnRenameSearch(wxCommandEvent&)
 void SjAdvSearchDialog::OnSearchEndEditLabel(wxListEvent& event)
 {
 	// edit cancelled?
-	// these two lines were edited to the bug http://www.silverjuke.net/forum/post.php?p=8161#8161
+	// these two lines were edited to the bug http://www.viabox.net/forum/post.php?p=8161#8161
 	if( event.IsEditCancelled() )
 		return;
 
@@ -2710,7 +2710,7 @@ SjAdvSearch SjAdvSearchModule::GetSearch__(long index__, long id__, const wxStri
 					// the name and the ID are also stored together with the rules;
 					// however, eg. for external scripts it is easier to leave them empty, so always prefer
 					// the "id" and the "name" fiels from the database.
-					// see http://www.silverjuke.net/forum/topic-2540.html
+					// see http://www.viabox.net/forum/topic-2540.html
 					wxASSERT( ret.m_id == 0 || ret.m_id == sql.GetLong(0) );
 					wxASSERT( ret.m_name.IsEmpty() || ret.m_name == sql.GetString(1) );
 

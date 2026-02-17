@@ -567,7 +567,7 @@ public:
 	virtual bool        IsMyUrl             (const wxString& url)=0;
 
 	// The follwing function is mainly are for the folder scanner
-	// and is used when dropping folders to silverjuke. Other scanners should get
+	// and is used when dropping folders to viabox. Other scanners should get
 	// their sources by AddSources()
 	virtual bool        AddUrl              (const wxString& url) { return FALSE; }
 };

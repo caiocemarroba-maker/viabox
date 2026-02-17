@@ -1,0 +1,14 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Silverjuke
+GenericName=Music Player
+GenericName[de]=Musikabspieler
+Comment=Play and organize music in an easy-to-use jukebox style
+Comment[de]=Abspielen und sortieren von Musik mit einer einfach zu benutzenden Jukebox
+Keywords=player;mp3;audio;cd;podcast;playlist;karaoke;kiosk mode;musicbox;party;
+Keywords[de]=abspieler;mp3;audio;cd;podcast;playlist;karaoke;kiosk modus;musicbox;party;
+TryExec=viabox
+Exec=viabox
+Icon=viabox
+Categories=AudioVideo;Audio;Player;Music

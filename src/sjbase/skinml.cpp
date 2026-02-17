@@ -172,6 +172,7 @@ static SjSkinMlParserRaw s_target2IdTable[] =
 	{ wxT("search"),                IDT_SEARCH                                       },
 	{ wxT("searchbutton"),          IDT_SEARCH_BUTTON                                },
 	{ wxT("searchinfo"),            IDT_SEARCH_INFO                                  },
+	{ wxT("songsonhold"),           IDT_SONGS_ON_HOLD                                },
 	{ wxT("currcredit"),            IDT_CURR_CREDIT                                  },
 	{ wxT("currtrack"),             IDT_CURR_TRACK                                   },
 	{ wxT("nexttrack"),             IDT_NEXT_TRACK                                   },
@@ -1263,7 +1264,7 @@ SjSkinSkin* SjSkinMlParser::ParseFile(const wxString& url,
 {
 	wxASSERT(m_deleteData==TRUE);
 
-	// In versions before 1.11 silverjuke crashed if an erroneous skin was loaded;
+	// In versions before 1.11 viabox crashed if an erroneous skin was loaded;
 	// the reason for this was an uninitialized m_currTag pointer used in LogError,
 	// so we do not save a "current" tag any longer.
 	// Anyway, it seems to be a good idea to call CrashPrecaution() before loading

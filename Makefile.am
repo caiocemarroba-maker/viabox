@@ -3,7 +3,7 @@
 # Copyright © 2015 Björn Petersen
 # Copyright © 2015 Dr. Tobias Quathamer
 #
-# This file is part of silverjuke.
+# This file is part of viabox.
 #
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -26,15 +26,15 @@ ACLOCAL_AMFLAGS = --install -I m4
 
 # Provide the pkgdatadir variable to cpp files in order to be able
 # to reliably locate the skins, keyboards and visualizations.
-silverjuke_CPPFLAGS = -Isrc $(WX_CPPFLAGS) $(GST_CFLAGS) $(GL_CFLAGS) $(UPNP_FLAGS) -DPKGDATADIR=\"$(pkgdatadir)\" -DPKGDOCDIR=\"$(docdir)\"
-silverjuke_CXXFLAGS = \
+viabox_CPPFLAGS = -Isrc $(WX_CPPFLAGS) $(GST_CFLAGS) $(GL_CFLAGS) $(UPNP_FLAGS) -DPKGDATADIR=\"$(pkgdatadir)\" -DPKGDOCDIR=\"$(docdir)\"
+viabox_CXXFLAGS = \
 	-Isrc \
 	-Wall \
 	-Wno-unused-but-set-variable \
 	-g \
 	$(ZLIB_CFLAGS) $(LIBXINE_CFLAGS) $(SQLITE3_CFLAGS) $(WX_CXXFLAGS)
-silverjuke_LDADD = $(ZLIB_LIBS) $(LIBXINE_LIBS) $(SQLITE3_LIBS) $(WX_LIBS) $(GST_LIBS) -lgstvideo-1.0 $(GL_LIBS) $(UPNP_LIBS)
-silverjuke_LDFLAGS = $(LDFLAGS)
+viabox_LDADD = $(ZLIB_LIBS) $(LIBXINE_LIBS) $(SQLITE3_LIBS) $(WX_LIBS) $(GST_LIBS) -lgstvideo-1.0 $(GL_LIBS) $(UPNP_LIBS)
+viabox_LDFLAGS = $(LDFLAGS)
 
 dist_doc_DATA = \
 	CHANGES.md \
@@ -50,16 +50,16 @@ dist_doc_DATA = \
 	docs/virtual-keyboards.md
 
 desktopdir = $(datadir)/applications
-dist_desktop_DATA = silverjuke.desktop
+dist_desktop_DATA = viabox.desktop
 
 iconsdatadir = $(datadir)/icons/hicolor
 icons48dir = $(iconsdatadir)/48x48/apps
 icons64dir = $(iconsdatadir)/64x64/apps
 icons128dir = $(iconsdatadir)/128x128/apps
 
-dist_icons48_DATA = src/sjdata/icons/48x48/silverjuke.png
-dist_icons64_DATA = src/sjdata/icons/64x64/silverjuke.png
-dist_icons128_DATA = src/sjdata/icons/128x128/silverjuke.png
+dist_icons48_DATA = src/sjdata/icons/48x48/viabox.png
+dist_icons64_DATA = src/sjdata/icons/64x64/viabox.png
+dist_icons128_DATA = src/sjdata/icons/128x128/viabox.png
 
 # Install keyboard files and skin directories
 EXTRA_DIST = \
@@ -67,35 +67,35 @@ EXTRA_DIST = \
 	$(top_srcdir)/src/sjdata/keyboards
 
 install-data-local:
-	$(MKDIR_P) $(DESTDIR)$(datadir)/silverjuke/keyboards
-	$(MKDIR_P) $(DESTDIR)$(datadir)/silverjuke/skins/golden-goal.sjs
-	$(MKDIR_P) $(DESTDIR)$(datadir)/silverjuke/skins/old-style-jukebox.sjs
-	$(MKDIR_P) $(DESTDIR)$(datadir)/silverjuke/skins/racky.sjs
-	$(MKDIR_P) $(DESTDIR)$(datadir)/silverjuke/skins/silveriness-touched.sjs
-	$(MKDIR_P) $(DESTDIR)$(datadir)/silverjuke/skins/vistact.sjs
-	$(MKDIR_P) $(DESTDIR)$(datadir)/silverjuke/vis
-	$(INSTALL_DATA) $(top_srcdir)/src/sjdata/keyboards/* $(DESTDIR)$(datadir)/silverjuke/keyboards
-	$(INSTALL_DATA) $(top_srcdir)/src/sjdata/skins/golden-goal.sjs/* $(DESTDIR)$(datadir)/silverjuke/skins/golden-goal.sjs
-	$(INSTALL_DATA) $(top_srcdir)/src/sjdata/skins/old-style-jukebox.sjs/* $(DESTDIR)$(datadir)/silverjuke/skins/old-style-jukebox.sjs
-	$(INSTALL_DATA) $(top_srcdir)/src/sjdata/skins/racky.sjs/* $(DESTDIR)$(datadir)/silverjuke/skins/racky.sjs
-	$(INSTALL_DATA) $(top_srcdir)/src/sjdata/skins/silveriness-touched.sjs/* $(DESTDIR)$(datadir)/silverjuke/skins/silveriness-touched.sjs
-	$(INSTALL_DATA) $(top_srcdir)/src/sjdata/skins/vistact.sjs/* $(DESTDIR)$(datadir)/silverjuke/skins/vistact.sjs
-	$(INSTALL_DATA) $(top_srcdir)/src/sjdata/vis/* $(DESTDIR)$(datadir)/silverjuke/vis
+	$(MKDIR_P) $(DESTDIR)$(datadir)/viabox/keyboards
+	$(MKDIR_P) $(DESTDIR)$(datadir)/viabox/skins/golden-goal.sjs
+	$(MKDIR_P) $(DESTDIR)$(datadir)/viabox/skins/old-style-jukebox.sjs
+	$(MKDIR_P) $(DESTDIR)$(datadir)/viabox/skins/racky.sjs
+	$(MKDIR_P) $(DESTDIR)$(datadir)/viabox/skins/silveriness-touched.sjs
+	$(MKDIR_P) $(DESTDIR)$(datadir)/viabox/skins/vistact.sjs
+	$(MKDIR_P) $(DESTDIR)$(datadir)/viabox/vis
+	$(INSTALL_DATA) $(top_srcdir)/src/sjdata/keyboards/* $(DESTDIR)$(datadir)/viabox/keyboards
+	$(INSTALL_DATA) $(top_srcdir)/src/sjdata/skins/golden-goal.sjs/* $(DESTDIR)$(datadir)/viabox/skins/golden-goal.sjs
+	$(INSTALL_DATA) $(top_srcdir)/src/sjdata/skins/old-style-jukebox.sjs/* $(DESTDIR)$(datadir)/viabox/skins/old-style-jukebox.sjs
+	$(INSTALL_DATA) $(top_srcdir)/src/sjdata/skins/racky.sjs/* $(DESTDIR)$(datadir)/viabox/skins/racky.sjs
+	$(INSTALL_DATA) $(top_srcdir)/src/sjdata/skins/silveriness-touched.sjs/* $(DESTDIR)$(datadir)/viabox/skins/silveriness-touched.sjs
+	$(INSTALL_DATA) $(top_srcdir)/src/sjdata/skins/vistact.sjs/* $(DESTDIR)$(datadir)/viabox/skins/vistact.sjs
+	$(INSTALL_DATA) $(top_srcdir)/src/sjdata/vis/* $(DESTDIR)$(datadir)/viabox/vis
 
 # Uninstall keyboard files and skin directories
 uninstall-local:
-	rm -rf $(DESTDIR)$(datadir)/silverjuke/skins
-	rm -rf $(DESTDIR)$(datadir)/silverjuke/keyboards
+	rm -rf $(DESTDIR)$(datadir)/viabox/skins
+	rm -rf $(DESTDIR)$(datadir)/viabox/keyboards
 
 # Create and install manpage
-man1_MANS = silverjuke.1
-CLEANFILES = silverjuke.1
-silverjuke.1:
-	$(RST2MAN) $(top_srcdir)/docs/command-line.rst silverjuke.1
+man1_MANS = viabox.1
+CLEANFILES = viabox.1
+viabox.1:
+	$(RST2MAN) $(top_srcdir)/docs/command-line.rst viabox.1
 
-bin_PROGRAMS = silverjuke
+bin_PROGRAMS = viabox
 
-silverjuke_SOURCES = \
+viabox_SOURCES = \
 	src/kiss_fft/kiss_fft.c \
 	src/kiss_fft/tools/kiss_fftr.c \
 	src/prjm/amalgation1.cpp \

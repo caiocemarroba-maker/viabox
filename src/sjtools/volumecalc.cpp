@@ -102,7 +102,7 @@ void SjVolumeCalc::AddBuffer(const float* data, long bytes, int freq, int channe
 		{
 			sample = ( *data++ );
 
-			// sometimes BASS may give me data widely out of range, see http://www.silverjuke.net/forum/viewtopic.php?t=1007
+			// sometimes BASS may give me data widely out of range, see http://www.viabox.net/forum/viewtopic.php?t=1007
 			// never trust incoming data
 			#define TOLERANCE 1.4
 			if( sample < TOLERANCE*-1 ) sample = TOLERANCE*-1;

@@ -171,7 +171,8 @@
 #define IDT_SEEK_BWD                291
 #define IDT_STOP_AFTER_EACH_TRACK   294
 #define IDT_TOGGLE_REMOVE_PLAYED    295
-#define IDT_LAST                 295 /* last relavant target ID */
+#define IDT_SONGS_ON_HOLD           296
+#define IDT_LAST                 296 /* last relavant target ID */
 
 
 /* Here comes the [M]odules [ID]s, IDM_*, which are normally forwarded
@@ -378,7 +379,7 @@
 
 
 /* [MOD]ule [M]e[S]sa[G]e [ID]s, IDMODMSG_*
- * send via a SjModuleSystem::BroadcastMsg() from silverjuke --> all modules
+ * send via a SjModuleSystem::BroadcastMsg() from viabox --> all modules
  */
 #define IDMODMSG_FIRST                              11000 /* range start */
 

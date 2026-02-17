@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Silverjuke\n"
 "Report-Msgid-Bugs-To: r10s@b44t.com\n"
-"POT-Creation-Date: 2016-03-12 14:44+0100\n"
+"POT-Creation-Date: 2019-05-22 19:22-0300\n"
 "PO-Revision-Date: 2010-11-14 10:21+0100\n"
 "Last-Translator: Dan Larsen <dvl@privat.dk>\n"
 "Language-Team: Danish\n"
@@ -138,6 +138,11 @@ msgstr ""
 "\n"
 "Stop opdateringen?"
 
+#, fuzzy
+#| msgid "Cleanup index..."
+msgid "Cleanup caches"
+msgstr "Rens indeks..."
+
 #, c-format
 msgid ""
 "%s is currently playing. Do you want to stop the playing track and exit %s?"
@@ -204,6 +209,12 @@ msgstr "Start afsplining når sat i kø"
 
 msgid "Remove played tracks from queue"
 msgstr "Fjern afspillet numre fra køen"
+
+msgid "Interrupt the playing track and continue with the new selection?"
+msgstr ""
+
+msgid "Interrupt playing track"
+msgstr ""
 
 msgid "More from current album"
 msgstr "Mere fra dette album"
@@ -938,6 +949,11 @@ msgid "Ask before clearing the playlist"
 msgstr "Spørg før spillelisten ryddes"
 
 #, fuzzy
+#| msgid "Ask before enqueuing multiple tracks"
+msgid "Ask before interrupting tracks"
+msgstr "Spørg før flere numre sættes i kø"
+
+#, fuzzy
 #| msgid "Ask before changing my rating"
 msgid "Ask before changing the rating"
 msgstr "Spørg før ændring af min bedømmelse"
@@ -1536,8 +1552,13 @@ msgstr "Virtuelt tastetur"
 msgid "Credit system"
 msgstr "Kredit system"
 
+#, fuzzy
+#| msgid ""
+#| "Silverjuke provides a so called \"kiosk mode\" which allows you to run "
+#| "the program\n"
+#| "full screen with a defined functionality."
 msgid ""
-"Silverjuke provides a so called \"kiosk mode\" which allows you to run the "
+"Via Box provides a so called \"kiosk mode\" which allows you to run the "
 "program\n"
 "full screen with a defined functionality."
 msgstr ""
@@ -1657,8 +1678,16 @@ msgstr "Gennemsigtighed:"
 msgid "Hide cursor"
 msgstr "Skjul cursor"
 
+#, fuzzy
+#| msgid ""
+#| "Using the Numpad plus some other special keys, you can control Silverjuke "
+#| "completely\n"
+#| "by the keyboard or some other hardware buttons. In this case, you'll "
+#| "enqueue new\n"
+#| "tracks by entering the unique numbers shown beside the album and track "
+#| "names."
 msgid ""
-"Using the Numpad plus some other special keys, you can control Silverjuke "
+"Using the Numpad plus some other special keys, you can control Via Box "
 "completely\n"
 "by the keyboard or some other hardware buttons. In this case, you'll enqueue "
 "new\n"
@@ -1703,6 +1732,11 @@ msgstr "Husk kredit mellem program starter"
 
 msgid "Current credit:"
 msgstr "Nuværende kredit:"
+
+#, fuzzy
+#| msgid "Total time"
+msgid "Total:"
+msgstr "Samlet tid"
 
 msgid "Please enter your password to exit the kiosk mode."
 msgstr "Indtast password for at forlade Kiosk tilstand"
@@ -2313,8 +2347,10 @@ msgstr "Ukent nummer"
 msgid "Unknown artist"
 msgstr "Ukent kunstner"
 
-msgid "Add a server containing music-files"
-msgstr "Tilføj en server, der indeholder musik filer"
+#, fuzzy
+#| msgid "Add a DAAP-/iTunes-server"
+msgid "Add an HTTP server"
+msgstr "Tilføj en DAAP-/iTunes-server"
 
 msgid "Use server:"
 msgstr "Brug server:"
@@ -2633,6 +2669,9 @@ msgstr "Brug %s-filer"
 msgid "Please select a directory with images"
 msgstr "Vælg en mappe med billeder"
 
+msgid "Scroll"
+msgstr ""
+
 msgid "Title overlay"
 msgstr ""
 
@@ -2650,6 +2689,9 @@ msgstr "Vis spektrum"
 
 msgid "Show oscilloscope"
 msgstr "Vis ocilloskope"
+
+msgid "Mono"
+msgstr ""
 
 msgid "Show starfield"
 msgstr "Vis stjerneregn"
@@ -3026,8 +3068,11 @@ msgstr "Filen \"%s\" eksisterer ikke."
 msgid "Cannot execute \"%s\"."
 msgstr "Kan ikke starte \"%s\"."
 
-msgid "Please use the operating system to set Silverjuke to an exclusive mode."
+msgid "Please use the operating system to set Via Box to an exclusive mode."
 msgstr ""
+
+#~ msgid "Add a server containing music-files"
+#~ msgstr "Tilføj en server, der indeholder musik filer"
 
 #, fuzzy
 #~| msgid "Only initalize system volume"
@@ -3202,7 +3247,7 @@ msgstr ""
 #~ msgid "These options are available if you buy Silverjuke."
 #~ msgstr "Disse indstillinger er tilgængelige, hvis du køber Silverjuke."
 
-# The first %s will be replaced by the program name (usually "Silverjuke"), the second and third %s will be replaced by a file type (eg. "MP3"), the fourth %s will be replaced by the URL to search for modules (eg. "http://www.silverjuke.net/en/modules.html".
+# The first %s will be replaced by the program name (usually "Silverjuke"), the second and third %s will be replaced by a file type (eg. "MP3"), the fourth %s will be replaced by the URL to search for modules (eg. "http://www.viabox.net/en/modules.html".
 #~ msgid ""
 #~ "%s has not found an %s-decoder on your system. If you want to play %s-"
 #~ "files, you should install a module for this purpose.\n"
@@ -3307,9 +3352,6 @@ msgstr ""
 #~ msgid "Arguments for \"%s\""
 #~ msgstr "Argumenter for \"%s\""
 
-#~ msgid "Total time"
-#~ msgstr "Samlet tid"
-
 #~ msgid "Cannot calculate the total time"
 #~ msgstr "Kan ikke beregne samlet tid"
 
@@ -3396,7 +3438,7 @@ msgstr ""
 #~ "fortsætte med at bruge \n"
 #~ "dette program."
 
-# The first %s will be replaced by the program name, usually "Silverjuke". The second %s will be replaced by the name of the website, eg. www.silverjuke.net
+# The first %s will be replaced by the program name, usually "Silverjuke". The second %s will be replaced by the name of the website, eg. www.viabox.net
 #~ msgid ""
 #~ "Further information about purchasing %s licences\n"
 #~ "are available at %s."
@@ -3404,7 +3446,7 @@ msgstr ""
 #~ "Yderligere oplysninger om køb af %s licenser \n"
 #~ "findes på %s."
 
-# %s will be replaced by the name of a website, eg. www.silverjuke.net
+# %s will be replaced by the name of a website, eg. www.viabox.net
 #~ msgid "Open %s..."
 #~ msgstr "Åben %s..."
 
@@ -3543,7 +3585,7 @@ msgstr ""
 #~ msgid "Close %s"
 #~ msgstr "Luk %s"
 
-# %s will be replaced by the name of a website, eg. www.silverjuke.net
+# %s will be replaced by the name of a website, eg. www.viabox.net
 #~ msgid "Open %s"
 #~ msgstr "Åben %s"
 
@@ -3573,9 +3615,6 @@ msgstr ""
 
 #~ msgid "DAAP-/iTunes-client"
 #~ msgstr "DAAP-/iTunes-klient"
-
-#~ msgid "Add a DAAP-/iTunes-server"
-#~ msgstr "Tilføj en DAAP-/iTunes-server"
 
 #~ msgid ""
 #~ "With Silverjuke's HTTP server you can access the program and your music "

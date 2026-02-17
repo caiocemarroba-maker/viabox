@@ -74,7 +74,7 @@ static Tagger_File* getTaggerFile(const wxString& url, wxInputStream* inputStrea
 	{
 		g_taggerOptions = new Tagger_Options();
 		g_taggerOptions->m_flags = g_tools->m_config->Read("tageditor/tagflags",  SJTF_DEFAULTS);
-		g_taggerOptions->m_ratingUser = g_tools->m_config->Read("tageditor/ratinguser",  "r@silverjuke.net");
+		g_taggerOptions->m_ratingUser = g_tools->m_config->Read("tageditor/ratinguser",  "r@viabox.net");
 	}
 
 	// create file

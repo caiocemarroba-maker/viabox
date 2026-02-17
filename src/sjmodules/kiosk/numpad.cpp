@@ -195,7 +195,7 @@ void SjNumpadInput::KeyPressed(long idt)
 {
 	if( g_mainFrame==NULL || g_accelModule==NULL || g_kioskModule==NULL )
 	{
-		// in silverjuke contruction/destruction?
+		// in viabox contruction/destruction?
 		return;
 	}
 

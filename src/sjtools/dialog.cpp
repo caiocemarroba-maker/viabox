@@ -872,7 +872,7 @@ void SjDlgControls::SetValue(long index, const wxString& value)
 		}
 		else if( dc.m_type == SJ_DLG_STATICCTRL_TYPE )
 		{
-			// added in 2.52beta15 due to http://www.silverjuke.net/forum/post.php?p=8037#8037
+			// added in 2.52beta15 due to http://www.viabox.net/forum/post.php?p=8037#8037
 			wxStaticText* staticText = (wxStaticText*)dc.m_wndCtrl;
 			staticText->SetLabel(value);
 		}

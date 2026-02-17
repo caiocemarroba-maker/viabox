@@ -2,7 +2,7 @@ Silverjuke
 ================================================================================
 
 Silverjuke is the easy-to-use jukebox with more than ten years of experience, see
-https://silverjuke.net for further information.
+https://viabox.net for further information.
 
 The Silverjuke source code is available under the GPL license, see the file
 LICENSE for details.
@@ -16,9 +16,9 @@ manager.  If it is not there, please contact your linux distributor - we cannot
 help on this point.
 
 Alternatively, more experienced users can build Silverjuke themselves.  The
-source code from https://github.com/silverjuke/silverjuke plus a simple
+source code from https://github.com/viabox/viabox plus a simple
 `./autogen.sh`, `make` and `make install` should do the job. If you want to run
-silverjuke from your build dir, run `./silverjuke` instead of `make install`.
+viabox from your build dir, run `./viabox` instead of `make install`.
 
 Beyond the usual gcc and system development packages, chances are you'll also
 need the following or similar stuff:
@@ -44,14 +44,14 @@ for this are missing codecs, install the corresponding packages in this case,
 eg. gstreamer1.0-plugins-ugly for MP3.
 
 **Windows, Mac:**  For Windows and Mac OS X, ready-to-use programs with the most
-recent version are available at https://silverjuke.net .  Note, that these
+recent version are available at https://viabox.net .  Note, that these
 binaries are not open source.
 
 
 Issues
 ===============================================================================
 
-Any issues can be reported to https://github.com/silverjuke/silverjuke/issues
+Any issues can be reported to https://github.com/viabox/viabox/issues
 
 
 Coding

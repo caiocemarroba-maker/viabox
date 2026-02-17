@@ -93,7 +93,7 @@ SjTools::SjTools()
 		m_configIsDefault = FALSE;
 	}
 	#ifdef __WXMSW__
-	else if( ::wxFileExists( GetSilverjukeProgramDir() + wxT("globals.ini")) ) // don't use "silverjuke.ini" which will be created by some (winamp) plugins
+	else if( ::wxFileExists( GetSilverjukeProgramDir() + wxT("globals.ini")) ) // don't use "viabox.ini" which will be created by some (winamp) plugins
 	{
 		m_configDescr = GetSilverjukeProgramDir() + wxT("globals.ini");
 		m_config = new wxFileConfig(SJ_PROGRAM_NAME, SJ_PROGRAM_NAME, m_configDescr);
@@ -617,7 +617,7 @@ wxString SjTools::GetUserAppDataDir()
 			tempFileName.AssignHomeDir();
 			tempFileName.AppendDir(wxT(".config"));
 		}
-		tempFileName.AppendDir(wxT("silverjuke"));
+		tempFileName.AppendDir(wxT("viabox"));
 		tempFileName.Normalize();
 		if( !::wxDirExists(tempFileName.GetFullPath()) )
 		{
@@ -668,7 +668,7 @@ void SjTools::InitSearchPaths()
 		m_searchPaths.Add(str);
 	}
 
-	// ...directory shared by all users (eg. /usr/share/silverjuke or the program directory on windows)
+	// ...directory shared by all users (eg. /usr/share/viabox or the program directory on windows)
 	str = GetGlobalAppDataDir();
 	if( m_searchPaths.Index(str) == wxNOT_FOUND )
 	{
@@ -791,7 +791,7 @@ wxString SjTools::GetFileContent(wxInputStream* inputStream, wxMBConv* mbConv)
 						|| ((unsigned char)buf[0]==0xFE && (unsigned char)buf[1]==0xFF) )
 				{
 					// UTF-16LE or UTF-16BE BOM (Byte order mark) detected: Force UTF-16 decoding.
-					// see http://www.silverjuke.net/forum/topic-3118.html
+					// see http://www.viabox.net/forum/topic-3118.html
 					SjByteVector v((const unsigned char*)buf, bytes);
 					ret = v.toString(SJ_UTF16);
 				}
@@ -3851,7 +3851,7 @@ void SjPlaceholdMatcher::Compile(const wxString& pattern, const wxString& highPr
 	// case)
 	m_goBack.Clear();
 	m_goForward = 0;
-	if( m_parts.GetCount() > 0 // Bug fixed, s. http://www.silverjuke.net/forum/topic-2669.html
+	if( m_parts.GetCount() > 0 // Bug fixed, s. http://www.viabox.net/forum/topic-2669.html
 	        && m_parts[0].m_placeholder.IsEmpty() )
 	{
 		int currPartIndex;
@@ -3989,7 +3989,7 @@ void SjPlaceholdMatcher::Match(const wxString& haystack, bool shortExt)
 			}
 
 			// if the delimiter is a point and the next is the extension, look for the last
-			// point -- see the forum entry http://www.silverjuke.net/forum/post.php?p=1849#1849
+			// point -- see the forum entry http://www.viabox.net/forum/post.php?p=1849#1849
 			if( shortExt
 			        && currPart->m_delimSepAfter == wxT(".")
 			        && currPartIndex == (int)m_parts.GetCount()-2

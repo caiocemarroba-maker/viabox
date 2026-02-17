@@ -163,7 +163,7 @@ void SjModuleSystem::Init()
 			db->SetCache(g_tools->m_config->Read("main/idxCacheBytes", SJ_DEF_SQLITE_CACHE_BYTES));
 			db->SetSync(g_tools->m_config->Read("main/idxCacheSync", SJ_DEF_SQLITE_SYNC));
 
-			// ...create silverjuke header table
+			// ...create viabox header table
 			sql.ConfigWrite("dbversion", CURR_DB_VERSION);
 			sql.ConfigWrite("created", (long)wxDateTime::Now().GetAsDOS());
 

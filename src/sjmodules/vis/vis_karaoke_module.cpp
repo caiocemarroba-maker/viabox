@@ -441,7 +441,7 @@ void SjKaraokeWindow::OnTimer(wxTimerEvent&)
 		{
 			if( m_sjScreen == NULL )
 				m_sjScreen = new SjSjScreen(wxT("SILVERJUKE KARAOKE"),
-				                            g_mainFrame->IsKioskStarted()? wxT("www.silverjuke.net") : wxT(""), 8000);
+				                            g_mainFrame->IsKioskStarted()? wxT("www.viabox.net") : wxT(""), 8000);
 		}
 		else
 		{
@@ -668,7 +668,7 @@ void SjKaraokeModule::UpdateBg(bool keepImg)
 					possibleFiles.RemoveAt(bgCurrFileIndex); // avoid using the same background image now
 				}
 
-				if( possibleFiles.GetCount() > 0 ) // "possibleFiles" may be empty, check this to avoid crashes, see http://www.silverjuke.net/forum/topic-1954.html
+				if( possibleFiles.GetCount() > 0 ) // "possibleFiles" may be empty, check this to avoid crashes, see http://www.viabox.net/forum/topic-1954.html
 				{
 					m_bgCurrFile = possibleFiles.Item( SjTools::Rand(possibleFiles.GetCount()) );
 				}

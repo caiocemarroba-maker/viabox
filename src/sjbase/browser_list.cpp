@@ -221,7 +221,7 @@ void SjListBrowser::SetOrder(long sortField, bool desc)
 	wxString pos;
 	long posOffset = 0;
 
-	#define KEEP_POSITION 1 // see http://www.silverjuke.net/forum/viewtopic.php?t=1350
+	#define KEEP_POSITION 1 // see http://www.viabox.net/forum/viewtopic.php?t=1350
 	#if KEEP_POSITION
 	pos = GetFirstSelectedAndVisiblePos(posOffset);
 	#endif
@@ -1610,7 +1610,7 @@ bool SjListBrowser::DoChangeSelection(long dir, bool selectShifted)
 		}
 		else
 		{
-			// start a new selection, before http://www.silverjuke.net/forum/topic-2892.html we used "m_scrollPos - 1" here
+			// start a new selection, before http://www.viabox.net/forum/topic-2892.html we used "m_scrollPos - 1" here
 			newPos = m_scrollPos;
 			if( newPos < 0 )
 				return false;
@@ -1631,7 +1631,7 @@ bool SjListBrowser::DoChangeSelection(long dir, bool selectShifted)
 		}
 		else
 		{
-			// start a new selection, we're selection the first track here (as we do in the album view), see http://www.silverjuke.net/forum/topic-2892.html
+			// start a new selection, we're selection the first track here (as we do in the album view), see http://www.viabox.net/forum/topic-2892.html
 			newPos = m_scrollPos;
 			if( newPos < 0 )
 				return false;

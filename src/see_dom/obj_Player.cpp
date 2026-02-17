@@ -359,7 +359,7 @@ IMPLEMENT_PUT(player)
 	}
 	else if( VAL_PROPERTY( stopAfterThisTrack ) )
 	{
-		g_mainFrame->StopAfterThisTrack( VAL_BOOL ); // do not use g_mainFrame->m_player->StopAfterThisTrack(), see http://www.silverjuke.net/forum/post.php?p=10381#10381
+		g_mainFrame->StopAfterThisTrack( VAL_BOOL ); // do not use g_mainFrame->m_player->StopAfterThisTrack(), see http://www.viabox.net/forum/post.php?p=10381#10381
 	}
 	else if( VAL_PROPERTY( stopAfterEachTrack ) )
 	{

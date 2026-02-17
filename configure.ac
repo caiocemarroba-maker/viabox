@@ -3,7 +3,7 @@
 # Copyright © 2015 Björn Petersen
 # Copyright © 2015 Dr. Tobias Quathamer
 #
-# This file is part of silverjuke.
+# This file is part of viabox.
 #
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -20,7 +20,7 @@
 
 # Set up autoconf
 AC_PREREQ([2.69])
-AC_INIT([silverjuke], [18.2.1], [r10s@b44t.com])
+AC_INIT([viabox], [18.2.1], [r10s@b44t.com])
 AC_CONFIG_MACRO_DIR([m4])
 
 # AC_CONFIG_SRCDIR just checks a single file to make sure, we're in the correct directory
@@ -33,7 +33,7 @@ AM_MAINTAINER_MODE
 # Set up gettext
 AM_GNU_GETTEXT([external])
 AM_GNU_GETTEXT_VERSION([0.18])
-#AC_DEFINE([GETTEXT_PACKAGE], ["silverjuke"], [Gettext package name.])
+#AC_DEFINE([GETTEXT_PACKAGE], ["viabox"], [Gettext package name.])
 
 # Checks for programs
 AC_PROG_CXX

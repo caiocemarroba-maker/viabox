@@ -125,6 +125,7 @@ public:
 	bool            ShowRemainingTime   () const { return m_showRemainingTime; }
 	void            OnUrlChanged        (const wxString& n, const wxString& o) { m_player.m_queue.OnUrlChanged(n, o); }
 	void            OnUrlChangingDone   () { UpdateDisplay(); }
+	void            UpdateSongsTotal();
 	void            VisSwitcherToggle(bool bVis = true);
 	bool            VisSwitcherIsCursorKey(int targetId);
 	void            VisSwitcherStartTimer(bool bReset);

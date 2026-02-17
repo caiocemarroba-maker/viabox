@@ -255,7 +255,7 @@ void SjPlaylistEntry::VerifyUrl()
 
 				// make urlFn absolute using MakeAbsolute(GetPath()) (GetPath() does not return the name, so this should work just fine)
 				#ifdef __WXMSW__
-					containerPath.Replace("/", "\\"); // needed as wxPATH_NATIVE obviously expects native paths ... see http://www.silverjuke.net/forum/post.php?p=14207#14207
+					containerPath.Replace("/", "\\"); // needed as wxPATH_NATIVE obviously expects native paths ... see http://www.viabox.net/forum/post.php?p=14207#14207
 				#endif
 				wxFileName tempFn(containerPath, wxPATH_NATIVE);
 				urlFn.MakeAbsolute(tempFn.GetPath(wxPATH_GET_VOLUME));
@@ -326,7 +326,7 @@ void SjPlaylistEntry::VerifyUrl()
 	}
 
 	// make sure, we're using the correct case, see
-	// http://www.silverjuke.net/forum/topic-2406.html
+	// http://www.viabox.net/forum/topic-2406.html
 	#ifdef __WXMSW__
 	{
 		wxSqlt sql;

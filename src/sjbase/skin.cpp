@@ -2825,7 +2825,7 @@ void SjSkinWindow::SaveSizes()
 				{
 					dependingLayout->m_currRect.x   = currRect.x;
 					dependingLayout->m_currRect.y   = currRect.y;
-					dependingLayout->m_alwaysOnTop  = m_currLayout->m_alwaysOnTop; // in 2.51beta2 hinzugefuegt, s. http://www.silverjuke.net/forum/topic-2392.html
+					dependingLayout->m_alwaysOnTop  = m_currLayout->m_alwaysOnTop; // in 2.51beta2 hinzugefuegt, s. http://www.viabox.net/forum/topic-2392.html
 				}
 			}
 		}
@@ -3691,7 +3691,7 @@ void SjSkinWindow::OnMouseLeftUp(wxMouseEvent& event)
 	//      HH%%        %%HH
 	//      HHHH--------HHHH
 	//
-	// see http://www.silverjuke.net/forum/topic-1475.html for details
+	// see http://www.viabox.net/forum/topic-1475.html for details
 
 	wxRect      clientRect = GetClientRect();
 	wxSize      cornerSize(clientRect.width/8, clientRect.height/8);

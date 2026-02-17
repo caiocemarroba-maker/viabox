@@ -278,7 +278,7 @@ IMPLEMENT_PUT(file)
 		if( l >= 0 )
 			fo->byteFile->Seek(l, SJ_SEEK_BEG);
 		else
-			fo->byteFile->Seek(l, SJ_SEEK_END); // not: "Seek(l*-1, SJ_SEEK_END)", to move in-file, SJ_SEEK_END expects negative values, see http://www.silverjuke.net/forum/topic-2630.html
+			fo->byteFile->Seek(l, SJ_SEEK_END); // not: "Seek(l*-1, SJ_SEEK_END)", to move in-file, SJ_SEEK_END expects negative values, see http://www.viabox.net/forum/topic-2630.html
 	}
 	else
 	{

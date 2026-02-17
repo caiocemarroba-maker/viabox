@@ -911,7 +911,7 @@ bool SjFolderScannerModule::IterateDir__(const wxString&        url, // may or m
 
 		if( source->m_flags&SJ_FOLDERSCANNER_READHIDDENDIRS )
 		{
-			// ... collect all DIRECTORIES using wxDir (allows us to read HIDDEN files - see http://www.silverjuke.net/forum/topic-3765.html)
+			// ... collect all DIRECTORIES using wxDir (allows us to read HIDDEN files - see http://www.viabox.net/forum/topic-3765.html)
 			wxFileName dirEntryFn  = wxFileSystem::URLToFileName(url);
 			wxString dirEntryStr = dirEntryFn.GetFullPath();
 			if( dirEntryFn.IsOk() && wxDir::Exists(dirEntryStr) )

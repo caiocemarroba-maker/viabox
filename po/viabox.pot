@@ -1,0 +1,2681 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Bjoern Petersen Software Design and Development
+# This file is distributed under the same license as the viabox package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: viabox 18.2.1\n"
+"Report-Msgid-Bugs-To: r10s@b44t.com\n"
+"POT-Creation-Date: 2019-05-22 19:22-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+msgid "Sleep mode activated."
+msgstr ""
+
+msgid "Sleep mode deactivated."
+msgstr ""
+
+msgid "Play time exceeded"
+msgstr ""
+
+msgid "Default"
+msgstr ""
+
+msgid "Device"
+msgstr ""
+
+msgid "Show covers"
+msgstr ""
+
+msgid "Duration"
+msgstr ""
+
+msgid "Artist"
+msgstr ""
+
+msgid "Original artist"
+msgstr ""
+
+msgid "Composer"
+msgstr ""
+
+msgid "Album"
+msgstr ""
+
+msgid "Track number"
+msgstr ""
+
+msgid "Automatic track number"
+msgstr ""
+
+msgid "Disk number"
+msgstr ""
+
+msgid "Genre"
+msgstr ""
+
+msgid "Year"
+msgstr ""
+
+msgid "Rating"
+msgstr ""
+
+msgid "Comment"
+msgstr ""
+
+msgid "Show double tracks"
+msgstr ""
+
+msgid "Show different artist names"
+msgstr ""
+
+msgid "Show different album names"
+msgstr ""
+
+msgid "Show cover titles"
+msgstr ""
+
+#, c-format
+msgid "%s tracks"
+msgstr ""
+
+msgid "Drag folders with music here."
+msgstr ""
+
+msgid "Reset to default values"
+msgstr ""
+
+msgid "Nr."
+msgstr ""
+
+#. TRANSLATORS: Abbreviation of "Bits per second"
+msgid "bit/s"
+msgstr ""
+
+msgid "Samplerate"
+msgstr ""
+
+#. TRANSLATORS: Abbreviation of "Hertz"
+msgid "Hz"
+msgstr ""
+
+msgid "Volume"
+msgstr ""
+
+msgid "Prelisten"
+msgstr ""
+
+msgid "AutoPlay"
+msgstr ""
+
+msgid "Shuffle"
+msgstr ""
+
+msgid "Recreating music library"
+msgstr ""
+
+msgid "Updating music library"
+msgstr ""
+
+msgid ""
+"If you cancel the update process, your music library may not be up to date.\n"
+"\n"
+"Cancel the update process?"
+msgstr ""
+
+msgid "Cleanup caches"
+msgstr ""
+
+#, c-format
+msgid ""
+"%s is currently playing. Do you want to stop the playing track and exit %s?"
+msgstr ""
+
+#, c-format
+msgid "Exit %s"
+msgstr ""
+
+#. TRANSLATORS: %s will be replaced by a filename
+#, c-format
+msgid "Cannot open \"%s\"."
+msgstr ""
+
+#, c-format
+msgid "Also install the script to \"%s\" for permanent use"
+msgstr ""
+
+#, c-format
+msgid "Execute the script \"%s\"?"
+msgstr ""
+
+msgid ""
+"CAUTION: Scripts may slow down Silverjuke or damage your data. Please use "
+"only scripts you trust."
+msgstr ""
+
+msgid "Search"
+msgstr ""
+
+msgid "On"
+msgstr ""
+
+msgid "Off"
+msgstr ""
+
+msgid "Repeat playlist"
+msgstr ""
+
+msgid "Repeat one"
+msgstr ""
+
+msgid "Repeat all"
+msgstr ""
+
+msgid "Select a track, then start playback."
+msgstr ""
+
+msgid "Stop after this track"
+msgstr ""
+
+msgid "Stop after each track"
+msgstr ""
+
+msgid "Double click play tracks at once"
+msgstr ""
+
+msgid "Start playback on first enqueue"
+msgstr ""
+
+msgid "Remove played tracks from queue"
+msgstr ""
+
+msgid "Interrupt the playing track and continue with the new selection?"
+msgstr ""
+
+msgid "Interrupt playing track"
+msgstr ""
+
+msgid "More from current album"
+msgstr ""
+
+msgid "More from current artist"
+msgstr ""
+
+msgid "No more tracks."
+msgstr ""
+
+#. TRANSLATORS: %i will be replaced by the number of tracks
+#, c-format
+msgid "Remove %i track from the queue and stop playback?"
+msgid_plural "Remove %i tracks from the queue and stop playback?"
+msgstr[0] ""
+msgstr[1] ""
+
+msgid "Clear playlist"
+msgstr ""
+
+msgid "Track played, click to reset"
+msgstr ""
+
+msgid "Boredom avoided: Track moved down"
+msgstr ""
+
+msgid "Remove this track"
+msgstr ""
+
+msgid "Toggle time mode"
+msgstr ""
+
+#, c-format
+msgid "Go to \"%s\""
+msgstr ""
+
+msgid "End search"
+msgstr ""
+
+msgid "click right for options"
+msgstr ""
+
+msgid "Double-click to enlarge the cover"
+msgstr ""
+
+#, c-format
+msgid "Close this window and exit %s"
+msgstr ""
+
+msgid "Open main menu"
+msgstr ""
+
+msgid "Toggle shuffle mode"
+msgstr ""
+
+msgid "Repeat all/repeat current"
+msgstr ""
+
+#, c-format
+msgid "Search in \"%s\""
+msgstr ""
+
+msgid "Help"
+msgstr ""
+
+msgid "Add folders and files"
+msgstr ""
+
+msgid "Extensions"
+msgstr ""
+
+msgid "Show remaining time"
+msgstr ""
+
+msgid "Show elapsed time"
+msgstr ""
+
+msgid "Show total time"
+msgstr ""
+
+msgid "Show track number"
+msgstr ""
+
+msgid "Show artist name"
+msgstr ""
+
+msgid "Show AutoPlay"
+msgstr ""
+
+msgid "Prefer album- to track-cover"
+msgstr ""
+
+msgid "Display"
+msgstr ""
+
+msgid "Columns"
+msgstr ""
+
+msgid "Same zoom in all views"
+msgstr ""
+
+msgid "Fonts and covers"
+msgstr ""
+
+msgid "Zoom"
+msgstr ""
+
+msgid "Skins"
+msgstr ""
+
+msgid "Start kiosk mode..."
+msgstr ""
+
+#, c-format
+msgid "%s on the web"
+msgstr ""
+
+msgid "All files"
+msgstr ""
+
+#, c-format
+msgid "About %s"
+msgstr ""
+
+msgid "File"
+msgstr ""
+
+msgid "Edit"
+msgstr ""
+
+msgid "View"
+msgstr ""
+
+msgid "Playback"
+msgstr ""
+
+msgid "Video screen"
+msgstr ""
+
+msgid "Kiosk mode"
+msgstr ""
+
+msgid "None"
+msgstr ""
+
+msgid "Further options"
+msgstr ""
+
+msgid "Queue"
+msgstr ""
+
+msgid "Current view"
+msgstr ""
+
+#, c-format
+msgid "Next track from \"%s\""
+msgstr ""
+
+msgid "Next track"
+msgstr ""
+
+msgid "Search for genre"
+msgstr ""
+
+msgid "Search for music selection"
+msgstr ""
+
+msgid "Edit tracks/Get info"
+msgstr ""
+
+msgid "Show file"
+msgstr ""
+
+msgid "Cover editor"
+msgstr ""
+
+msgid "Mix"
+msgstr ""
+
+msgid "Left channel"
+msgstr ""
+
+msgid "Right channel"
+msgstr ""
+
+msgid "Explicit output"
+msgstr ""
+
+msgid "Equalizer"
+msgstr ""
+
+msgid "Output"
+msgstr ""
+
+msgid "No"
+msgstr ""
+
+msgid "Yes"
+msgstr ""
+
+msgid "Initialize"
+msgstr ""
+
+msgid "Use system volume"
+msgstr ""
+
+msgid "Several artists"
+msgstr ""
+
+msgid "Unknown title"
+msgstr ""
+
+msgid "Save playlist"
+msgstr ""
+
+#. TRANSLATORS: %s will be replaced by a filename
+#, c-format
+msgid "Cannot write \"%s\"."
+msgstr ""
+
+msgid "Open playlist"
+msgstr ""
+
+msgid "Title"
+msgstr ""
+
+msgid "Track count"
+msgstr ""
+
+msgid "Disk count"
+msgstr ""
+
+msgid "Group"
+msgstr ""
+
+msgid "BPM"
+msgstr ""
+
+msgid "Channels"
+msgstr ""
+
+msgid "Bitrate"
+msgstr ""
+
+msgid "File name"
+msgstr ""
+
+msgid "File size"
+msgstr ""
+
+msgid "Date added"
+msgstr ""
+
+msgid "Date modified"
+msgstr ""
+
+msgid "Last played"
+msgstr ""
+
+msgid "Play count"
+msgstr ""
+
+msgid "SQL expression"
+msgstr ""
+
+msgid "Limit result to"
+msgstr ""
+
+msgid "Title/artist/album"
+msgstr ""
+
+msgid "File type"
+msgstr ""
+
+msgid "Queue position"
+msgstr ""
+
+msgid "Include tracks"
+msgstr ""
+
+msgid "Exclude tracks"
+msgstr ""
+
+msgid "Random"
+msgstr ""
+
+#, c-format
+msgid "Press \"%s\" in the main window"
+msgstr ""
+
+msgid "Insert"
+msgstr ""
+
+msgid "Del"
+msgstr ""
+
+msgid ""
+"Please enter the date as \"dd.mm.yyyy\", you can also add \"hh:mm\" for the "
+"time."
+msgstr ""
+
+msgid "Please enter the text."
+msgstr ""
+
+msgid "Please enter a value."
+msgstr ""
+
+msgid "Please enter a valid value."
+msgstr ""
+
+msgid "(second field)"
+msgstr ""
+
+msgid "No valid criteria defined."
+msgstr ""
+
+msgid "The search cannot be started; please check the following fields:"
+msgstr ""
+
+msgid "Note: The operators \"equal\" and \"unequal\" are case-sensitive."
+msgstr ""
+
+#, c-format
+msgid "Do you want to execute the scripts embedded in the skin \"%s\"?"
+msgstr ""
+
+msgid "Esc"
+msgstr ""
+
+msgid "Tab"
+msgstr ""
+
+msgid "Cancel"
+msgstr ""
+
+msgid "Page left"
+msgstr ""
+
+msgid "Page right"
+msgstr ""
+
+msgid "Page up"
+msgstr ""
+
+msgid "Page down"
+msgstr ""
+
+msgid "Menu"
+msgstr ""
+
+msgid "Cursor left"
+msgstr ""
+
+msgid "Cursor right"
+msgstr ""
+
+msgid "Cursor up"
+msgstr ""
+
+msgid "Cursor down"
+msgstr ""
+
+msgid "Line left"
+msgstr ""
+
+msgid "Line right"
+msgstr ""
+
+msgid "Line up"
+msgstr ""
+
+msgid "Line down"
+msgstr ""
+
+msgid "Home"
+msgstr ""
+
+msgid "End"
+msgstr ""
+
+msgid "Enter"
+msgstr ""
+
+msgid "Delete"
+msgstr ""
+
+msgid "Album view"
+msgstr ""
+
+msgid "Cover view"
+msgstr ""
+
+msgid "List view"
+msgstr ""
+
+msgid "Toggle view"
+msgstr ""
+
+msgid "Open playlist..."
+msgstr ""
+
+msgid "Unqueue marked tracks"
+msgstr ""
+
+msgid "Unqueue all but marked tracks"
+msgstr ""
+
+msgid "Save playlist..."
+msgstr ""
+
+msgid "Paste"
+msgstr ""
+
+msgid "Music selection..."
+msgstr ""
+
+msgid "Settings"
+msgstr ""
+
+msgid "Automatic control"
+msgstr ""
+
+msgid "Update music library"
+msgstr ""
+
+msgid "Recreate music library"
+msgstr ""
+
+msgid "Enqueue tracks"
+msgstr ""
+
+msgid "Play tracks next"
+msgstr ""
+
+msgid "Play tracks now"
+msgstr ""
+
+msgid "Volume up"
+msgstr ""
+
+msgid "Volume down"
+msgstr ""
+
+msgid "Unqueue tracks"
+msgstr ""
+
+msgid "Edit tracks/Get info..."
+msgstr ""
+
+msgid "Play"
+msgstr ""
+
+msgid "Pause"
+msgstr ""
+
+msgid "Stop"
+msgstr ""
+
+msgid "Previous track"
+msgstr ""
+
+msgid "Seek backward"
+msgstr ""
+
+msgid "Seek forward"
+msgstr ""
+
+msgid "Fade to next"
+msgstr ""
+
+msgid "Mute"
+msgstr ""
+
+msgid "Reload skin"
+msgstr ""
+
+msgid "Toggle video screen"
+msgstr ""
+
+msgid "Smooth"
+msgstr ""
+
+msgid "Select all"
+msgstr ""
+
+msgid "Zoom in"
+msgstr ""
+
+msgid "Zoom out"
+msgstr ""
+
+msgid "Normal zoom"
+msgstr ""
+
+msgid "Always on top"
+msgstr ""
+
+msgid "Go to current track"
+msgstr ""
+
+msgid "Go to marked track"
+msgstr ""
+
+msgid "Go to random album"
+msgstr ""
+
+msgid "Go to previous letter"
+msgstr ""
+
+msgid "Go to next letter"
+msgstr ""
+
+msgid "Add credit"
+msgstr ""
+
+msgid "Console..."
+msgstr ""
+
+msgid "Replace..."
+msgstr ""
+
+msgid "Split field..."
+msgstr ""
+
+msgid "Rename files..."
+msgstr ""
+
+msgid "Query online database..."
+msgstr ""
+
+msgid "New music selection..."
+msgstr ""
+
+msgid "Save"
+msgstr ""
+
+msgid "Save as..."
+msgstr ""
+
+msgid "Rename..."
+msgstr ""
+
+msgid "Revert to saved"
+msgstr ""
+
+msgid "Open file..."
+msgstr ""
+
+msgid "Save cover..."
+msgstr ""
+
+msgid "Rotate left"
+msgstr ""
+
+msgid "Rotate right"
+msgstr ""
+
+msgid "Flip horizontally"
+msgstr ""
+
+msgid "Flip vertically"
+msgstr ""
+
+msgid "Grayscale"
+msgstr ""
+
+msgid "Negative"
+msgstr ""
+
+msgid "Fit to screen"
+msgstr ""
+
+msgid "Decrease brightness"
+msgstr ""
+
+msgid "Increase brightness"
+msgstr ""
+
+msgid "Decrease contrast"
+msgstr ""
+
+msgid "Increase contrast"
+msgstr ""
+
+msgid "Normal brightness/contrast"
+msgstr ""
+
+msgid "Crop"
+msgstr ""
+
+msgid "Please press the shortcut to add."
+msgstr ""
+
+msgid "System-wide:"
+msgstr ""
+
+#, c-format
+msgid "Remove shortcut \"%s\""
+msgstr ""
+
+msgid "Add system-wide shortcut..."
+msgstr ""
+
+#, c-format
+msgid "Add shortcut to \"%s\"..."
+msgstr ""
+
+#, c-format
+msgid ""
+"The shortcut \"%s\" is currently assigned to the command \"%s\".\n"
+"\n"
+"Do you want to assign it to the shortcut \"%s\" now?"
+msgstr ""
+
+msgid "Mouse"
+msgstr ""
+
+msgid "Drag window content"
+msgstr ""
+
+msgid "Left mouse button"
+msgstr ""
+
+msgid "Drag selected tracks"
+msgstr ""
+
+msgid "Second click with the left mouse button"
+msgstr ""
+
+msgid "Show icons beside mouse cursor"
+msgstr ""
+
+msgid "Middle mouse button"
+msgstr ""
+
+msgid "Edit tracks"
+msgstr ""
+
+msgid "Tooltips"
+msgstr ""
+
+msgid "Mouse wheel"
+msgstr ""
+
+msgid "Scroll horizontally in album view"
+msgstr ""
+
+msgid "Modifier key toggles axis"
+msgstr ""
+
+msgid "Right mouse button toggles axis"
+msgstr ""
+
+msgid "Modify volume, scrollbars, letters etc."
+msgstr ""
+
+msgid "Use multimedia keyboard keys"
+msgstr ""
+
+msgid "Ask on close if playing"
+msgstr ""
+
+msgid "Ask before enqueuing multiple tracks"
+msgstr ""
+
+msgid "Ask before clearing the playlist"
+msgstr ""
+
+msgid "Ask before interrupting tracks"
+msgstr ""
+
+msgid "Ask before changing the rating"
+msgstr ""
+
+#, c-format
+msgid "Num%s"
+msgstr ""
+
+msgid "Backspace"
+msgstr ""
+
+msgid "Space"
+msgstr ""
+
+msgid "Up"
+msgstr ""
+
+msgid "Left"
+msgstr ""
+
+msgid "Right"
+msgstr ""
+
+msgid "Down"
+msgstr ""
+
+msgid "Print"
+msgstr ""
+
+msgid "Ins"
+msgstr ""
+
+msgid "Music selection"
+msgstr ""
+
+msgid "Numpad"
+msgstr ""
+
+msgid "Select date and time"
+msgstr ""
+
+msgid "Time"
+msgstr ""
+
+msgid "contains"
+msgstr ""
+
+msgid "does not contain"
+msgstr ""
+
+msgid "starts with"
+msgstr ""
+
+msgid "does not start with"
+msgstr ""
+
+msgid "starts simelar to"
+msgstr ""
+
+msgid "ends with"
+msgstr ""
+
+msgid "does not end with"
+msgstr ""
+
+msgid "on"
+msgstr ""
+
+msgid "is equal to"
+msgstr ""
+
+msgid "not on"
+msgstr ""
+
+msgid "is unequal to"
+msgstr ""
+
+msgid "is simelar to"
+msgstr ""
+
+msgid "is after"
+msgstr ""
+
+msgid "is greater than"
+msgstr ""
+
+msgid "is on or after"
+msgstr ""
+
+msgid "is greater or equal"
+msgstr ""
+
+msgid "is before"
+msgstr ""
+
+msgid "is less than"
+msgstr ""
+
+msgid "is on or before"
+msgstr ""
+
+msgid "is less or equal"
+msgstr ""
+
+msgid "is in the last"
+msgstr ""
+
+msgid "is not in the last"
+msgstr ""
+
+msgid "is in the period"
+msgstr ""
+
+msgid "is in range"
+msgstr ""
+
+msgid "is not in the period"
+msgstr ""
+
+msgid "is not in range"
+msgstr ""
+
+msgid "is set"
+msgstr ""
+
+msgid "is unset"
+msgstr ""
+
+msgid "tracks"
+msgstr ""
+
+msgid "albums"
+msgstr ""
+
+msgid "minutes"
+msgstr ""
+
+msgid "hours"
+msgstr ""
+
+msgid "seconds"
+msgstr ""
+
+msgid "days"
+msgstr ""
+
+msgid "No rating"
+msgstr ""
+
+msgid "random"
+msgstr ""
+
+msgid "highest rating"
+msgstr ""
+
+msgid "lowest rating"
+msgstr ""
+
+msgid "most often played"
+msgstr ""
+
+msgid "least often played"
+msgstr ""
+
+msgid "most recently played"
+msgstr ""
+
+msgid "least recently played"
+msgstr ""
+
+msgid "most recently added"
+msgstr ""
+
+msgid "least recently added"
+msgstr ""
+
+msgid "most recently modified"
+msgstr ""
+
+msgid "least recently modified"
+msgstr ""
+
+msgid "most recently released"
+msgstr ""
+
+msgid "least recently released"
+msgstr ""
+
+msgid "low queue position"
+msgstr ""
+
+msgid "high queue position"
+msgstr ""
+
+msgid "Today"
+msgstr ""
+
+msgid "Yesterday"
+msgstr ""
+
+msgid "Select..."
+msgstr ""
+
+msgid "Show tracks..."
+msgstr ""
+
+msgid "Add tracks from playlist"
+msgstr ""
+
+msgid "Current position"
+msgstr ""
+
+msgid "by"
+msgstr ""
+
+msgid "to"
+msgstr ""
+
+msgid "Remove criterion"
+msgstr ""
+
+msgid "Add criterion"
+msgstr ""
+
+#, c-format
+msgid "Tracks included to \"%s\""
+msgstr ""
+
+#, c-format
+msgid "Tracks excluded from \"%s\""
+msgstr ""
+
+msgid "Saved selections"
+msgstr ""
+
+#, c-format
+msgid "Search for %s matching %s of the following criteria:"
+msgstr ""
+
+msgid "tracks|albums"
+msgstr ""
+
+msgid "all|any|none"
+msgstr ""
+
+msgid "Close"
+msgstr ""
+
+#, c-format
+msgid "Do you want to save your modifications to the music selection \"%s\"?"
+msgstr ""
+
+msgid "Music selection modified"
+msgstr ""
+
+#, c-format
+msgid "Edit music selection \"%s\""
+msgstr ""
+
+#, c-format
+msgid "Do you really want to delete the music selection \"%s\"?"
+msgstr ""
+
+msgid "Delete music selection"
+msgstr ""
+
+#, c-format
+msgid "Do you really want to delete the %i selected music selections?"
+msgstr ""
+
+msgid "Delete music selections"
+msgstr ""
+
+#, c-format
+msgid "No matches found for \"%s\"."
+msgstr ""
+
+#, c-format
+msgid ""
+"Do you want to remove the selected track(s) from the music selection \"%s\"?"
+msgstr ""
+
+#, c-format
+msgid "Do you want to add the selected track(s) to the music selection \"%s\"?"
+msgstr ""
+
+msgid "70's music"
+msgstr ""
+
+msgid "Worst rated"
+msgstr ""
+
+msgid "Top rated"
+msgstr ""
+
+msgid "Top 20"
+msgstr ""
+
+msgid "Recently played"
+msgstr ""
+
+msgid "Played today"
+msgstr ""
+
+msgid "Random selection"
+msgstr ""
+
+msgid "Tracks in queue"
+msgstr ""
+
+msgid "Untitled Music selection"
+msgstr ""
+
+#, c-format
+msgid "No matches in \"%s\""
+msgstr ""
+
+#, c-format
+msgid "1 match in \"%s\""
+msgstr ""
+
+#, c-format
+msgid "%s matches in \"%s\""
+msgstr ""
+
+msgid "No matches"
+msgstr ""
+
+msgid "1 match"
+msgstr ""
+
+#, c-format
+msgid "%s matches"
+msgstr ""
+
+msgid "Search single words"
+msgstr ""
+
+msgid "Lookup genre on simple search"
+msgstr ""
+
+msgid "Search while typing"
+msgstr ""
+
+msgid "Save modified music selections"
+msgstr ""
+
+msgid "Ask"
+msgstr ""
+
+msgid "Max. history size"
+msgstr ""
+
+#, c-format
+msgid "Search for \"%s\" in \"%s\""
+msgstr ""
+
+#, c-format
+msgid "Search for \"%s\""
+msgstr ""
+
+msgid ""
+"Please press and hold the left mouse button. Then, select the area to crop "
+"by moving the mouse."
+msgstr ""
+
+msgid "<Abstract>"
+msgstr ""
+
+msgid "(Default)"
+msgstr ""
+
+msgid "Paste image from clipboard"
+msgstr ""
+
+msgid "Browse"
+msgstr ""
+
+msgid "Select cover"
+msgstr ""
+
+msgid "Search covers on the web"
+msgstr ""
+
+msgid "Don't rotate"
+msgstr ""
+
+msgid "Rotate/flip"
+msgstr ""
+
+msgid "Use default images..."
+msgstr ""
+
+msgid "Effects/options"
+msgstr ""
+
+msgid "Select image"
+msgstr ""
+
+msgid "Save cover"
+msgstr ""
+
+msgid "Reset all selected alternative images to their default value?"
+msgstr ""
+
+msgid "Search paths"
+msgstr ""
+
+msgid "Add..."
+msgstr ""
+
+msgid "Remove"
+msgstr ""
+
+msgid "Please select the folder to add to the search paths."
+msgstr ""
+
+msgid "Edit..."
+msgstr ""
+
+msgid "Command"
+msgstr ""
+
+msgid "Shortcut"
+msgstr ""
+
+msgid "Option"
+msgstr ""
+
+msgid "Value"
+msgstr ""
+
+msgid "The following settings are for experienced users only."
+msgstr ""
+
+msgid "Customize"
+msgstr ""
+
+msgid "Reset selection"
+msgstr ""
+
+#, c-format
+msgid ""
+"Do you really want to reset all %i selected commands and options to their "
+"default values?"
+msgstr ""
+
+msgid "Shortcuts"
+msgstr ""
+
+msgid "Language"
+msgstr ""
+
+msgid "Show files with"
+msgstr ""
+
+msgid "Instance"
+msgstr ""
+
+#, c-format
+msgid "Use the command-line option --%s=<file> to change this."
+msgstr ""
+
+msgid "Index file"
+msgstr ""
+
+msgid "RAM cache"
+msgstr ""
+
+#, c-format
+msgid "avg. query time: %s"
+msgstr ""
+
+msgid "ms"
+msgstr ""
+
+msgid "Synchronity"
+msgstr ""
+
+msgid "Fast"
+msgstr ""
+
+msgid "Save but slower"
+msgstr ""
+
+msgid "Very save and slow"
+msgstr ""
+
+msgid "Image cache"
+msgstr ""
+
+msgid "Use temporary directory"
+msgstr ""
+
+msgid "Yes, load images asynchrony"
+msgstr ""
+
+msgid "Yes, load images directly and avoid flickering"
+msgstr ""
+
+#, c-format
+msgid "%i%% used for %i images"
+msgstr ""
+
+msgid "Regard file changes"
+msgstr ""
+
+msgid "Advanced"
+msgstr ""
+
+#, c-format
+msgid "Please restart %s so that the changes can take effect."
+msgstr ""
+
+msgid "Info"
+msgstr ""
+
+msgid "Help-system"
+msgstr ""
+
+msgid "n/a"
+msgstr ""
+
+msgid "Internal"
+msgstr ""
+
+msgid "No credit."
+msgstr ""
+
+#, c-format
+msgid "Credit: %i"
+msgstr ""
+
+msgid "Start"
+msgstr ""
+
+msgid "Functions"
+msgstr ""
+
+msgid "Monitors"
+msgstr ""
+
+msgid "Virtual keyboard"
+msgstr ""
+
+msgid "Credit system"
+msgstr ""
+
+msgid ""
+"Via Box provides a so called \"kiosk mode\" which allows you to run the "
+"program\n"
+"full screen with a defined functionality."
+msgstr ""
+
+msgid ""
+"Before you enter the kiosk mode by clicking on \"Start\", make sure, you "
+"know how\n"
+"to exit again:"
+msgstr ""
+
+#, c-format
+msgid "Exit by hitting %s"
+msgstr ""
+
+msgid "Action:"
+msgstr ""
+
+msgid "Exit by clicking into two different corners"
+msgstr ""
+
+msgid "Try to set exclusive"
+msgstr ""
+
+msgid "Ask for a password on exit"
+msgstr ""
+
+msgid "Change password..."
+msgstr ""
+
+msgid "Start the kiosk mode with the following functionality:"
+msgstr ""
+
+msgid "Play/pause"
+msgstr ""
+
+msgid "Edit queue"
+msgstr ""
+
+msgid "Toggle elements"
+msgstr ""
+
+msgid "Enqueue multiple tracks"
+msgstr ""
+
+msgid "All functions"
+msgstr ""
+
+#, c-format
+msgid "Limit tracks to the music selection %s"
+msgstr ""
+
+msgid "Please enter the password again for verification."
+msgstr ""
+
+msgid "Overview:"
+msgstr ""
+
+msgid "Main window"
+msgstr ""
+
+msgid "Monitor"
+msgstr ""
+
+msgid "Disable screensaver"
+msgstr ""
+
+msgid "Disable power management"
+msgstr ""
+
+msgid "For more complex layouts, please refer to the command line options."
+msgstr ""
+
+msgid ""
+"If no physical keyboard is present, you can use our virtual keyboard;\n"
+"the virtual keyboard then is shown whenever you click into a text control."
+msgstr ""
+
+msgid "Use the virtual keyboard"
+msgstr ""
+
+msgid "Also use the virtual keyboard outside the kiosk mode"
+msgstr ""
+
+msgid "Test:"
+msgstr ""
+
+msgid "(please click into the text control)"
+msgstr ""
+
+msgid "Virtual keyboard layout:"
+msgstr ""
+
+msgid "Colour:"
+msgstr ""
+
+msgid "Black"
+msgstr ""
+
+msgid "White"
+msgstr ""
+
+msgid "Transparency:"
+msgstr ""
+
+msgid "Hide cursor"
+msgstr ""
+
+msgid ""
+"Using the Numpad plus some other special keys, you can control Via Box "
+"completely\n"
+"by the keyboard or some other hardware buttons. In this case, you'll enqueue "
+"new\n"
+"tracks by entering the unique numbers shown beside the album and track names."
+msgstr ""
+
+msgid "Use Numpad controls"
+msgstr ""
+
+msgid "Also use Numpad controls outside the kiosk mode"
+msgstr ""
+
+msgid "Keys:"
+msgstr ""
+
+msgid ""
+"With the credit system, users must eg. add coins before tracks can be "
+"enqueued. Please\n"
+"refer to the online help for details about the possibilities and the "
+"supported hardware."
+msgstr ""
+
+msgid "Use credit system"
+msgstr ""
+
+msgid "Credits may be added by DDE, command line or shortcuts"
+msgstr ""
+
+msgid "Keys..."
+msgstr ""
+
+msgid "Remember credits between program starts"
+msgstr ""
+
+msgid "Current credit:"
+msgstr ""
+
+msgid "Total:"
+msgstr ""
+
+msgid "Please enter your password to exit the kiosk mode."
+msgstr ""
+
+msgid ""
+"Too many tracks in queue,\n"
+"please try again later."
+msgstr ""
+
+msgid ""
+"This track is already in queue,\n"
+"please try again later."
+msgstr ""
+
+msgid ""
+"This track or artist was just played,\n"
+"please try again later."
+msgstr ""
+
+msgid "Maintenance password"
+msgstr ""
+
+msgid "Exit kiosk mode"
+msgstr ""
+
+msgid "Start kiosk mode"
+msgstr ""
+
+msgid "OK"
+msgstr ""
+
+msgid "Password:"
+msgstr ""
+
+msgid "Invalid password. Please try again."
+msgstr ""
+
+msgid "Invalid track number"
+msgstr ""
+
+msgid "Shutdown computer"
+msgstr ""
+
+msgid "Reboot computer"
+msgstr ""
+
+msgid ""
+"Shift|AltGr|Delete|Clear\n"
+"all|OK"
+msgstr ""
+
+msgid ""
+"No virtual keyboard found, please add the *.sjk files to the search paths."
+msgstr ""
+
+#, c-format
+msgid "An album must have at least %s tracks with corresponding %s."
+msgstr ""
+
+msgid "artist/album"
+msgstr ""
+
+msgid "artist/album or genre"
+msgstr ""
+
+msgid "directory"
+msgstr ""
+
+#, c-format
+msgid "Compilations may contain up to %s tracks of the same artist."
+msgstr ""
+
+msgid "Separate the words using commas, case is ignored"
+msgstr ""
+
+msgid "Sort by:"
+msgstr ""
+
+msgid "Stop-words for sorting artists:"
+msgstr ""
+
+msgid "Stop-words for sorting albums:"
+msgstr ""
+
+msgid "Show stop-words words at end"
+msgstr ""
+
+msgid ""
+"If selected, eg. \"The Rolling Stones\" becomes \"Rolling Stones, The\";\n"
+"sorting itself is not affected by this option"
+msgstr ""
+
+msgid "Keywords to identify cover image for an album:"
+msgstr ""
+
+msgid "Double click on covers"
+msgstr ""
+
+msgid "Select/play album"
+msgstr ""
+
+msgid "Combine tracks to albums"
+msgstr ""
+
+msgid "Updating genres..."
+msgstr ""
+
+msgid "Updating groups..."
+msgstr ""
+
+msgid "Combining tracks to albums..."
+msgstr ""
+
+msgid "Do you want to add the following folder(s) to your music library?"
+msgstr ""
+
+#, c-format
+msgid "Yes, leave the image in \"%s\""
+msgstr ""
+
+#, c-format
+msgid "Yes, copy the image to \"%s\""
+msgstr ""
+
+#, c-format
+msgid "Do you want to use the given image as the cover for \"%s\"?"
+msgstr ""
+
+#. TRANSLATORS: %s will be replaced by a filename
+#, c-format
+msgid "\"%s\" is not in your music library and cannot be edited therefore."
+msgstr ""
+
+#, c-format
+msgid "%s tracks on %s albums found for \"%s\""
+msgstr ""
+
+#, c-format
+msgid "%s tracks on %s albums"
+msgstr ""
+
+msgid "Albums"
+msgstr ""
+
+msgid "All albums"
+msgstr ""
+
+msgid "Unsorted tracks"
+msgstr ""
+
+#, c-format
+msgid "Disk %i"
+msgstr ""
+
+msgid "O:"
+msgstr ""
+
+msgid "C:"
+msgstr ""
+
+msgid "Stop prelistening"
+msgstr ""
+
+#, c-format
+msgid "Prelisten \"%s\""
+msgstr ""
+
+#, c-format
+msgid "Enqueue \"%s\""
+msgstr ""
+
+#, c-format
+msgid "Play \"%s\" now"
+msgstr ""
+
+#, c-format
+msgid "Play \"%s\" next"
+msgstr ""
+
+#, c-format
+msgid "Unqueue \"%s\""
+msgstr ""
+
+#. TRANSLATORS: %i will be replaced by the number of tracks
+#, c-format
+msgid "Enqueue %i track"
+msgid_plural "Enqueue %i tracks"
+msgstr[0] ""
+msgstr[1] ""
+
+#. TRANSLATORS: %i will be replaced by the number of tracks
+#, c-format
+msgid "Play %i track now"
+msgid_plural "Play %i tracks now"
+msgstr[0] ""
+msgstr[1] ""
+
+#. TRANSLATORS: %i will be replaced by the number of tracks
+#, c-format
+msgid "Play %i track next"
+msgid_plural "Play %i tracks next"
+msgstr[0] ""
+msgstr[1] ""
+
+#. TRANSLATORS: %i will be replaced by the number of tracks
+#, c-format
+msgid "Unqueue %i track"
+msgid_plural "Unqueue %i tracks"
+msgstr[0] ""
+msgstr[1] ""
+
+#, c-format
+msgid "\"%s\" on the web"
+msgstr ""
+
+#, c-format
+msgid "Average rating: %s"
+msgstr ""
+
+#, c-format
+msgid "Rating: %s"
+msgstr ""
+
+#. TRANSLATORS: %i will be replaced by the number of tracks
+#, c-format
+msgid "Do you want to change the rating for %i selected track?"
+msgid_plural "Do you want to change the rating for %i selected tracks?"
+msgstr[0] ""
+msgstr[1] ""
+
+msgid "Change rating"
+msgstr ""
+
+msgid "Click to select all tracks of this album, double-click to play them"
+msgstr ""
+
+msgid "Click to select all tracks of this artists, double-click to play them"
+msgstr ""
+
+msgid "Click to select all tracks of this disk, double-click to play them"
+msgstr ""
+
+#, c-format
+msgid "Double-click to enqueue \"%s\""
+msgstr ""
+
+#. TRANSLATORS: %i will be replaced by the number of tracks
+#, c-format
+msgid "Do you want to enqueue %i selected track?"
+msgid_plural "Do you want to enqueue %i selected tracks?"
+msgstr[0] ""
+msgstr[1] ""
+
+msgid "Size"
+msgstr ""
+
+msgid "Gain"
+msgstr ""
+
+msgid "Read music-files from the following folders and sources:"
+msgstr ""
+
+msgid "Read music-files from the following sources:"
+msgstr ""
+
+msgid "Add source"
+msgstr ""
+
+msgid "Remove source"
+msgstr ""
+
+msgid "Options"
+msgstr ""
+
+msgid "Music library"
+msgstr ""
+
+#, c-format
+msgid "Options for \"%s\""
+msgstr ""
+
+msgid "Options..."
+msgstr ""
+
+msgid "Jukebox"
+msgstr ""
+
+msgid "Please select a playlist, some files or enter a streaming URL"
+msgstr ""
+
+msgid "Append to current playlist"
+msgstr ""
+
+msgid "Volume control"
+msgstr ""
+
+msgid "Play all tracks of an album with the same volume"
+msgstr ""
+
+msgid "Desired volume:"
+msgstr ""
+
+msgid "Max. gain:"
+msgstr ""
+
+msgid "Current volume:"
+msgstr ""
+
+msgid "Fading"
+msgstr ""
+
+msgid "Crossfading"
+msgstr ""
+
+msgid "Manual crossfades:"
+msgstr ""
+
+msgid "Automatic crossfades:"
+msgstr ""
+
+msgid "Offset to end:"
+msgstr ""
+
+msgid "No crossfades between subsequent tracks of the same album"
+msgstr ""
+
+msgid "Only fade out the old track, the new track starts with full volume"
+msgstr ""
+
+msgid "Resume"
+msgstr ""
+
+msgid "Jingles"
+msgstr ""
+
+msgid ""
+"The following options define the behaviour of the queue. For the \"shuffle "
+"intensity\",\n"
+"small values create only slight variations of the queue order, whereas large "
+"values\n"
+"cause major variations."
+msgstr ""
+
+#. TRANSLATORS: %i will be replaced by a number
+#, c-format
+msgid "Kiosk mode: Allow max. %i track waiting in queue"
+msgid_plural "Kiosk mode: Allow max. %i tracks waiting in queue"
+msgstr[0] ""
+msgstr[1] ""
+
+msgid "Kiosk mode: Avoid double tracks waiting in queue"
+msgstr ""
+
+#, c-format
+msgid "Avoid boredom: No track repetition within %i minutes"
+msgstr ""
+
+#, c-format
+msgid "Avoid boredom: No artist repetition within %i minutes"
+msgstr ""
+
+msgid "Shuffle intensity:"
+msgstr ""
+
+msgid ""
+"Here you can decide whether to restore the queue after a restart of "
+"Silverjuke.\n"
+"You can restore all or only unplayed titles."
+msgstr ""
+
+msgid "Restore queue"
+msgstr ""
+
+msgid "Restore already played tracks"
+msgstr ""
+
+msgid "Start playback from last position"
+msgstr ""
+
+msgid ""
+"Use the following options to define which actions should be done "
+"automatically\n"
+"after given timeouts."
+msgstr ""
+
+#, c-format
+msgid "AutoPlay: If the playlist is empty, wait %i minutes;"
+msgstr ""
+
+#, c-format
+msgid "then, play %i tracks from the %s"
+msgstr ""
+
+msgid "Ignore tracks from the music selection"
+msgstr ""
+
+msgid "Manually enqueued tracks interrupt AutoPlay immediately"
+msgstr ""
+
+msgid "Sleep mode:"
+msgstr ""
+
+msgid "Stop playback"
+msgstr ""
+
+msgid ""
+"in|after inactivity of|at|always in|always after inactivity of|always at"
+msgstr ""
+
+msgid "minutes|o'clock"
+msgstr ""
+
+#, c-format
+msgid "Before this, fade out %i seconds"
+msgstr ""
+
+msgid ""
+"Jingles are normal tracks from your music library that are played\n"
+"under certain conditions."
+msgstr ""
+
+msgid "If the jukebox is playing, about every"
+msgstr ""
+
+msgid "minutes,"
+msgstr ""
+
+msgid "play a track from the music selection"
+msgstr ""
+
+msgid "At"
+msgstr ""
+
+msgid "o'clock,"
+msgstr ""
+
+msgid "Daily"
+msgstr ""
+
+msgid "Wait for end of playing track"
+msgstr ""
+
+#, c-format
+msgid "Go to current track after %i minutes of inactivity"
+msgstr ""
+
+#, c-format
+msgid "Reset view after %i minutes of inactivity to"
+msgstr ""
+
+#, c-format
+msgid "Open video screen after %i minutes of inactivity"
+msgstr ""
+
+#, c-format
+msgid "Close video screen after %i minutes"
+msgstr ""
+
+#, c-format
+msgid "Limit play time to %i seconds"
+msgstr ""
+
+msgid "Read folders:"
+msgstr ""
+
+msgid "Read file:"
+msgstr ""
+
+msgid "Read (ID3)-tags"
+msgstr ""
+
+msgid "Path and file pattern for track-information if (ID3-)tags are missing:"
+msgstr ""
+
+msgid "Placeholders:"
+msgstr ""
+
+msgid "Include folder to the update process"
+msgstr ""
+
+msgid "Read hidden files"
+msgstr ""
+
+msgid "Read hidden folders"
+msgstr ""
+
+msgid "Read inside ZIP-/TAR-archives"
+msgstr ""
+
+msgid "Additional file extensions:"
+msgstr ""
+
+msgid "Ignore file extensions:"
+msgstr ""
+
+msgid "(separate the extensions using the comma, case is ignored)"
+msgstr ""
+
+msgid "Read files and folders"
+msgstr ""
+
+msgid "Add a folder to search for music-files"
+msgstr ""
+
+msgid "Add a single music-file"
+msgstr ""
+
+msgid "Disabled"
+msgstr ""
+
+msgid "No update"
+msgstr ""
+
+#, c-format
+msgid "Remove \"%s\" from the music library?"
+msgstr ""
+
+msgid "Select a folder with music-files"
+msgstr ""
+
+msgid "Select music-file"
+msgstr ""
+
+msgid "Unknown track"
+msgstr ""
+
+msgid "Unknown artist"
+msgstr ""
+
+msgid "Add an HTTP server"
+msgstr ""
+
+msgid "Use server:"
+msgstr ""
+
+msgid "Server:"
+msgstr ""
+
+msgid "Type"
+msgstr ""
+
+msgid "Login name:"
+msgstr ""
+
+msgid "Include server to the update process"
+msgstr ""
+
+msgid "Configuration file"
+msgstr ""
+
+#, c-format
+msgid "Loading %s"
+msgstr ""
+
+#, c-format
+msgid "Error %i"
+msgstr ""
+
+msgid "Edit track"
+msgstr ""
+
+msgid "of"
+msgstr ""
+
+msgid "Write (ID3-)tags"
+msgstr ""
+
+msgid "File names"
+msgstr ""
+
+#, c-format
+msgid "Show all %s file names..."
+msgstr ""
+
+msgid ""
+"The shown values are the sum or the average of all single values in the "
+"given files."
+msgstr ""
+
+msgid "Track"
+msgstr ""
+
+msgid "Further information"
+msgstr ""
+
+msgid "URL"
+msgstr ""
+
+msgid "Temporary directory"
+msgstr ""
+
+msgid "Further information..."
+msgstr ""
+
+#, c-format
+msgid "Cannot rename \"%s\" to \"%s\"."
+msgstr ""
+
+msgid "Server name"
+msgstr ""
+
+msgid "Query online database"
+msgstr ""
+
+msgid "more..."
+msgstr ""
+
+msgid "Please select one of the following albums:"
+msgstr ""
+
+msgid "Old file name"
+msgstr ""
+
+msgid "New file name"
+msgstr ""
+
+msgid "Field"
+msgstr ""
+
+msgid "Old value"
+msgstr ""
+
+msgid "New value"
+msgstr ""
+
+msgid "<empty>"
+msgstr ""
+
+msgid "Confirm modifications"
+msgstr ""
+
+msgid "Delete empty folders"
+msgstr ""
+
+msgid "Please confirm or edit the following modification:"
+msgstr ""
+
+#, c-format
+msgid "Please confirm or edit the following %s modifications:"
+msgstr ""
+
+msgid "(lower case)"
+msgstr ""
+
+msgid "(upper case)"
+msgstr ""
+
+msgid "(n characters)"
+msgstr ""
+
+msgid "Rename files"
+msgstr ""
+
+msgid "Pattern:"
+msgstr ""
+
+msgid "Artist (first character)"
+msgstr ""
+
+msgid "Album (first character)"
+msgstr ""
+
+msgid "Genre (first character)"
+msgstr ""
+
+msgid "Group (first character)"
+msgstr ""
+
+msgid "Year (4 characters)"
+msgstr ""
+
+msgid "Year (2 characters)"
+msgstr ""
+
+msgid "Duration (5 characters)"
+msgstr ""
+
+msgid "Directory change"
+msgstr ""
+
+msgid "File name (8 characters)"
+msgstr ""
+
+msgid "File extension"
+msgstr ""
+
+msgid "Example:"
+msgstr ""
+
+msgid "Replace"
+msgstr ""
+
+msgid "Search for:"
+msgstr ""
+
+msgid "in:"
+msgstr ""
+
+msgid "All fields"
+msgstr ""
+
+msgid "Path and file name"
+msgstr ""
+
+msgid "Replace with:"
+msgstr ""
+
+msgid "Match whole words only"
+msgstr ""
+
+msgid "Match case"
+msgstr ""
+
+msgid "Regular expression"
+msgstr ""
+
+#, c-format
+msgid "\"%s\" not found."
+msgstr ""
+
+msgid "Split field"
+msgstr ""
+
+msgid "Field to split:"
+msgstr ""
+
+msgid "Destination fields and pattern:"
+msgstr ""
+
+msgid "Track number (1 character)"
+msgstr ""
+
+msgid "Track number (2 characters)"
+msgstr ""
+
+msgid "Disk number (1 character)"
+msgstr ""
+
+msgid "Disk number (2 characters)"
+msgstr ""
+
+msgid "Void information"
+msgstr ""
+
+#, c-format
+msgid ""
+"With different skins you can change the \"look and feel\" of %s. Just\n"
+"select the skin to use from the list above. You'll find more skins on the "
+"web."
+msgstr ""
+
+msgid "Name"
+msgstr ""
+
+msgid "Info..."
+msgstr ""
+
+msgid "Update list"
+msgstr ""
+
+msgid "More skins on the web..."
+msgstr ""
+
+msgid ""
+"You can set independent font and cover sizes to use in the main window. The "
+"sizes\n"
+"refer to a zoom of 100%. If you zoom in or out (eg. by using the \"+\" or \"-"
+"\" keys), both\n"
+"sizes will grow or shrink proportionally."
+msgstr ""
+
+msgid "Font:"
+msgstr ""
+
+msgid "Font size:"
+msgstr ""
+
+msgid "Use this font for dialogs, too"
+msgstr ""
+
+msgid "Column width:"
+msgstr ""
+
+msgid "Cover size:"
+msgstr ""
+
+msgid "No lyrics found."
+msgstr ""
+
+msgid "Karaoke Prompt"
+msgstr ""
+
+#, c-format
+msgid "No images found in \"%s\"."
+msgstr ""
+
+msgid "Background"
+msgstr ""
+
+#, c-format
+msgid "Use %s-files"
+msgstr ""
+
+msgid "Please select a directory with images"
+msgstr ""
+
+msgid "Scroll"
+msgstr ""
+
+msgid "Title overlay"
+msgstr ""
+
+msgid "If appropriate, switch over automatically"
+msgstr ""
+
+msgid "Half size"
+msgstr ""
+
+msgid "Spectrum Monitor"
+msgstr ""
+
+msgid "Show spectrum"
+msgstr ""
+
+msgid "Show oscilloscope"
+msgstr ""
+
+msgid "Mono"
+msgstr ""
+
+msgid "Show starfield"
+msgstr ""
+
+msgid "Show other figures"
+msgstr ""
+
+msgid "Visualization"
+msgstr ""
+
+msgid "Preset info"
+msgstr ""
+
+msgid "Go to previous preset"
+msgstr ""
+
+msgid "Go to next preset"
+msgstr ""
+
+msgid "Go to random preset"
+msgstr ""
+
+msgid "Preset shuffle"
+msgstr ""
+
+msgid "Preset duration"
+msgstr ""
+
+msgid "No presets found."
+msgstr ""
+
+msgid "Video output"
+msgstr ""
+
+msgid "Search homepage"
+msgstr ""
+
+#, c-format
+msgid "Lyrics on %s"
+msgstr ""
+
+#, c-format
+msgid "Search with %s"
+msgstr ""
+
+#, c-format
+msgid "Information on %s"
+msgstr ""
+
+msgid "Object count:"
+msgstr ""
+
+msgid "Elapsed time:"
+msgstr ""
+
+msgid "Message"
+msgstr ""
+
+msgid "Scope"
+msgstr ""
+
+msgid "Console"
+msgstr ""
+
+#. TRANSLATORS: %i will be replaced by a number
+#, c-format
+msgid "%i message"
+msgid_plural "%i messages"
+msgstr[0] ""
+msgstr[1] ""
+
+msgid "Evaluate"
+msgstr ""
+
+msgid "Clear"
+msgstr ""
+
+msgid "Open console on errors and warnings"
+msgstr ""
+
+msgid "Details"
+msgstr ""
+
+msgid "Clear all messages?"
+msgstr ""
+
+#, c-format
+msgid "Overwrite \"%s\"?"
+msgstr ""
+
+msgid "Append"
+msgstr ""
+
+msgid "State"
+msgstr ""
+
+#, c-format
+msgid "%s-video"
+msgstr ""
+
+#, c-format
+msgid "%s-audio"
+msgstr ""
+
+#, c-format
+msgid "%s-images"
+msgstr ""
+
+#, c-format
+msgid "%s-playlists"
+msgstr ""
+
+#, c-format
+msgid "%s-files"
+msgstr ""
+
+msgid "Script-files"
+msgstr ""
+
+msgid "Silverjuke skin-files"
+msgstr ""
+
+msgid "Silverjuke jukebox-files"
+msgstr ""
+
+msgid "Archive-files"
+msgstr ""
+
+msgid "Known file-types"
+msgstr ""
+
+msgid "Test..."
+msgstr ""
+
+msgid "Programs"
+msgstr ""
+
+msgid "Cleanup index..."
+msgstr ""
+
+msgid "max. size"
+msgstr ""
+
+#, c-format
+msgid ""
+"Last time %s did not terminate normally.\n"
+"The following - maybe errorous - objects were in use just before the "
+"abnormal termination:\n"
+"\n"
+"%s\n"
+"\n"
+"On continuous problems, try to avoid using these objects.\n"
+"Do you want to use the objects this time?"
+msgstr ""
+
+msgid "Use maybe errorous objects?"
+msgstr ""
+
+msgid "__DATE_TIME_LONG__"
+msgstr ""
+
+msgid "__DATE_TIME_EDITABLE__"
+msgstr ""
+
+msgid "__DATE_LONG__"
+msgstr ""
+
+msgid "__DATE_EDITABLE__"
+msgstr ""
+
+msgid "__DATE_SUNDAY_FIRST__"
+msgstr ""
+
+msgid "__THIS_LANG__"
+msgstr ""
+
+msgid "__COVER_SEARCH_URLS__"
+msgstr ""
+
+msgid "__ARTIST_INFO_URLS__"
+msgstr ""
+
+msgid "__STOP_ARTISTS__"
+msgstr ""
+
+msgid "__STOP_ALBUMS__"
+msgstr ""
+
+msgid "__COVER_KEYWORDS__"
+msgstr ""
+
+msgid "__VIRT_KEYBD__"
+msgstr ""
+
+#. TRANSLATORS: This is the thousands separator, used for e.g. 10,000
+msgid ","
+msgstr ""
+
+#. TRANSLATORS: This is the decimal point, used for e.g. 3.1415926
+msgid "."
+msgstr ""
+
+#. TRANSLATORS: %i will be replaced by a number
+#, c-format
+msgid "%i day"
+msgid_plural "%i days"
+msgstr[0] ""
+msgstr[1] ""
+
+#, c-format
+msgid "Invalid regular expression \"%s\"."
+msgstr ""
+
+msgid "Fatal error"
+msgstr ""
+
+msgid "Ctrl"
+msgstr ""
+
+msgid "Alt"
+msgstr ""
+
+msgid "Shift"
+msgstr ""
+
+msgid "Enlarge window"
+msgstr ""
+
+msgid "Shrink window"
+msgstr ""
+
+msgid "Enlarge display"
+msgstr ""
+
+msgid "Shrink display"
+msgstr ""
+
+msgid "Services"
+msgstr ""
+
+#, c-format
+msgid "Hide %s"
+msgstr ""
+
+msgid "Hide Others"
+msgstr ""
+
+msgid "Show All"
+msgstr ""
+
+#, c-format
+msgid "Quit %s"
+msgstr ""
+
+msgid "Extras"
+msgstr ""
+
+msgid "Full screen"
+msgstr ""
+
+msgid "Modules on the web..."
+msgstr ""
+
+msgid "Explore"
+msgstr ""
+
+msgid "Reveal in Finder"
+msgstr ""
+
+#, c-format
+msgid "The file \"%s\" does not exist."
+msgstr ""
+
+#, c-format
+msgid "Cannot execute \"%s\"."
+msgstr ""
+
+msgid "Please use the operating system to set Via Box to an exclusive mode."
+msgstr ""

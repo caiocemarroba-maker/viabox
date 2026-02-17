@@ -558,7 +558,7 @@ Encode(interp, s, unesc)
 			AddEscape(interp, R, (unsigned char)(C & 0x7f));
 	    } else if (C < 0x800) {
 		AddEscape(interp, R, (unsigned char)(0xc0 | (C >>  6 & 0x1f)));
-		AddEscape(interp, R, (unsigned char)(0x80 | (C >>  0 & 0x3f))); /* 0x3f, nicht 0x2f: UTF-8 ist für den Bereich 0x80-7FF "% 110xxxxx 10xxxxxx", s. http://www.silverjuke.net/forum/topic-3234.html */
+		AddEscape(interp, R, (unsigned char)(0x80 | (C >>  0 & 0x3f))); /* 0x3f, nicht 0x2f: UTF-8 ist für den Bereich 0x80-7FF "% 110xxxxx 10xxxxxx", s. http://www.viabox.net/forum/topic-3234.html */
 	    } else if (C < 0x10000) {
 		AddEscape(interp, R, (unsigned char)(0xe0 | (C >> 12 & 0x0f)));
 		AddEscape(interp, R, (unsigned char)(0x80 | (C >>  6 & 0x3f))); /* 0x3f, nicht 0x2f ... */

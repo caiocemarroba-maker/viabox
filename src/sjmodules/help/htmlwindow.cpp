@@ -173,7 +173,7 @@ void SjHtmlWindow::OnLinkClicked(const wxHtmlLinkInfo& link)
 	}
 	else if( href.StartsWith(wxT("web:"), &rest) )
 	{
-		// explore the silverjuke homepage
+		// explore the viabox homepage
 		long homepageId;
 		if( !rest.AfterLast(',').ToLong(&homepageId) ) { homepageId = 0; }
 		g_tools->ExploreHomepage((SjHomepageId)homepageId);
@@ -191,7 +191,7 @@ void SjHtmlWindow::OnLinkClicked(const wxHtmlLinkInfo& link)
 	else if( href.StartsWith(wxT("page:"), &m_clickedLink) )
 	{
 		// go to another page, used by the help window;
-		// needed at least for "more..." in the page after buying silverjuke
+		// needed at least for "more..." in the page after buying viabox
 		SjDialog::FindTopLevel(this)->GetEventHandler()->QueueEvent(new wxCommandEvent(wxEVT_COMMAND_MENU_SELECTED, IDO_LINKCLICKED));
 		return;
 	}
