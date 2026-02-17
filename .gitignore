@@ -47,3 +47,20 @@ silverjuke.1
 # ignore other files
 .DS_Store
 
+# Arquivos compilados
+viabox
+*.o
+*.lo
+*.a
+*.so
+*.deb
+
+# Pastas automake
+autom4te.cache/
+config.status
+config.log
+Makefile
+Makefile.in
+
+# Outros
+nohup.out
